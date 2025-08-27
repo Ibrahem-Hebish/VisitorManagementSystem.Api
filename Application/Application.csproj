@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.0.1" />
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="13.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.8" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Notification\Permits\" />
+    <Folder Include="Permits\Commands\CreatePermit\" />
+    <Folder Include="Permits\Commands\ApprovePermit\" />
+    <Folder Include="Permits\Commands\ExtendPermit\" />
+    <Folder Include="Permits\Commands\DeletePermit\" />
+    <Folder Include="Permits\Commands\RejectPermit\" />
+    <Folder Include="Permits\Commands\UpdatePermit\" />
+    <Folder Include="Permits\Queries\GetPermitEntryLog\" />
+    <Folder Include="Permits\Queries\GetVisitorPermits\" />
+    <Folder Include="Permits\Queries\GetPermitHistory\" />
+    <Folder Include="Permits\Queries\GetPermitsPaged\" />
+    <Folder Include="Permits\Queries\SearchByDate\" />
+  </ItemGroup>
+
+</Project>

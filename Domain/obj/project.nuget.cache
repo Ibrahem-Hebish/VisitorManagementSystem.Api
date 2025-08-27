@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NBZTfjz14hw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Super magic\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

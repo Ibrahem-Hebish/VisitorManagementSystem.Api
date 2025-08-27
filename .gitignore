@@ -1,0 +1,9 @@
+.vs/
+
+# Build outputs
+bin/
+obj/
+
+# Other common ignore patterns
+*.user
+*.suo

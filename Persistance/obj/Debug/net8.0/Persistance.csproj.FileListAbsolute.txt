@@ -1,0 +1,12 @@
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\bin\Debug\net8.0\Persistance.deps.json
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\bin\Debug\net8.0\Persistance.dll
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\bin\Debug\net8.0\Persistance.pdb
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\Debug\net8.0\Persistance.csproj.AssemblyReference.cache
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\Debug\net8.0\Persistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\Debug\net8.0\Persistance.AssemblyInfoInputs.cache
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\Debug\net8.0\Persistance.AssemblyInfo.cs
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\Debug\net8.0\Persistance.csproj.CoreCompileInputs.cache
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\Debug\net8.0\Persistance.dll
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\Debug\net8.0\refint\Persistance.dll
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\Debug\net8.0\Persistance.pdb
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\Debug\net8.0\ref\Persistance.dll
