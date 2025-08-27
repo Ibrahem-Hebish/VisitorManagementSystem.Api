@@ -1,0 +1,377 @@
+[
+  {
+    "ContainingType": "Presentation.Controllers.V1.AdminController",
+    "Method": "GetBranch",
+    "RelativePath": "api/v1/Admin/Branch/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AdminController",
+    "Method": "CreateTenantAdmin",
+    "RelativePath": "api/v1/Admin/CreateBranchAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Admin.CreateTenantAdmin.CreateBranchAdminCommand",
+        "IsRequired": true
+      },
+      {
+        "Name": "TenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "BranchId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AdminController",
+    "Method": "CreateNewBranch",
+    "RelativePath": "api/v1/Admin/CreateNewBranch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Admin.CreateBranch.CreateBranchCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AdminController",
+    "Method": "CreateTenantWithShredDb",
+    "RelativePath": "api/v1/Admin/CreateTenantWithSharedDb",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenantName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AdminController",
+    "Method": "CreateTenantDatabase",
+    "RelativePath": "api/v1/Admin/CreateTenantWithSoloDatabase",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TenantName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ConnectionString",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AdminController",
+    "Method": "DeleteBranch",
+    "RelativePath": "api/v1/Admin/DeleteBranch/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AdminController",
+    "Method": "DeleteTenantWithSharedDb",
+    "RelativePath": "api/v1/Admin/DeleteTenantWithSharedDb",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AdminController",
+    "Method": "DeleteTenantWithSoloDb",
+    "RelativePath": "api/v1/Admin/DeleteTenantWithSoloDb",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TenantId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AdminController",
+    "Method": "Get",
+    "RelativePath": "api/v1/Admin/GetTenants",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AdminController",
+    "Method": "GetDetails",
+    "RelativePath": "api/v1/Admin/TenantDetails/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AuthenticationController",
+    "Method": "LogOut",
+    "RelativePath": "api/v1/Authentication/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AuthenticationController",
+    "Method": "Profile",
+    "RelativePath": "api/v1/Authentication/Profile/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AuthenticationController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/v1/Authentication/refreshtoken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.AuthenticationController",
+    "Method": "SignIn",
+    "RelativePath": "api/v1/Authentication/signin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Authentication.SignIn.SignInCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.BranchAdminController",
+    "Method": "CreateManager",
+    "RelativePath": "api/v1/BranchAdmin/createmanager",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.BranchAdmin.CreateManager.CreateManagerCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.BranchAdminController",
+    "Method": "CreateRequester",
+    "RelativePath": "api/v1/BranchAdmin/createrequester",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.BranchAdmin.CreateRequester.CreateRequesterCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.BranchAdminController",
+    "Method": "CreateSecurity",
+    "RelativePath": "api/v1/BranchAdmin/createsecurity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.BranchAdmin.CreateSecurity.CreateSecurityCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.BranchAdminController",
+    "Method": "DeleteManager",
+    "RelativePath": "api/v1/BranchAdmin/deletemanager/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.BranchAdminController",
+    "Method": "DeleteRequester",
+    "RelativePath": "api/v1/BranchAdmin/deleterequester/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.BranchAdminController",
+    "Method": "DeleteSecurity",
+    "RelativePath": "api/v1/BranchAdmin/deletesecurity/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.PermitController",
+    "Method": "Get",
+    "RelativePath": "api/v1/Permit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.PermitController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/Permit/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.PermitController",
+    "Method": "GetByManagerId",
+    "RelativePath": "api/v1/Permit/Manager/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.V1.PermitController",
+    "Method": "GetByRequesterId",
+    "RelativePath": "api/v1/Permit/Requester/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

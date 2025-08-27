@@ -1,0 +1,4 @@
+{
+  "DefaultConnection": "server = . ; database = Shared; Integrated Security = SSPI;TrustServerCertificate = true;Encrypt = false"
+
+}
