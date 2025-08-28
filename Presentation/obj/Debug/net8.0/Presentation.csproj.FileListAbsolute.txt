@@ -436,3 +436,4 @@ C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Presentation\obj\D
 C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Presentation\obj\Debug\net8.0\Presentation.pdb
 C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Presentation\obj\Debug\net8.0\Presentation.genruntimeconfig.cache
 C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Presentation\obj\Debug\net8.0\ref\Presentation.dll
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Presentation\obj\Debug\net8.0\Presentation.sourcelink.json

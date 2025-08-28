@@ -3,12 +3,208 @@
   "WorkspaceRootPath": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\commands\\createpermit\\createpermitcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\commands\\createpermit\\createpermitcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\persistance\\tenantdb\\repositories\\permits\\permitcommandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|solutionrelative:persistance\\tenantdb\\repositories\\permits\\permitcommandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\persistance\\tenantdb\\repositories\\permits\\permitqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|solutionrelative:persistance\\tenantdb\\repositories\\permits\\permitqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\notification\\permits\\permitcreateddomaineventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\notification\\permits\\permitcreateddomaineventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\commands\\validators\\extendpermitcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\commands\\validators\\extendpermitcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\commands\\validators\\createpermitvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\commands\\validators\\createpermitvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\commands\\rejectpermit\\rejectpermitcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\commands\\rejectpermit\\rejectpermitcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\commands\\extendpermit\\extendpermitcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\commands\\extendpermit\\extendpermitcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\commands\\deletepermit\\deletepermitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\commands\\deletepermit\\deletepermitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\commands\\approvepermit\\approvepermitcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\commands\\approvepermit\\approvepermitcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\commands\\approvepermit\\approvepermitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\commands\\approvepermit\\approvepermitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\presentation\\controllers\\v1\\permitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\v1\\permitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\presentation\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|solutionrelative:presentation\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\presentation\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|solutionrelative:presentation\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\persistance\\tenantdb\\tenantdbconfiguration\\permittrackconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|solutionrelative:persistance\\tenantdb\\tenantdbconfiguration\\permittrackconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\commands\\createpermit\\createpermitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\commands\\createpermit\\createpermitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\commands\\extendpermit\\extendpermitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\commands\\extendpermit\\extendpermitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\commands\\rejectpermit\\rejectpermitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\commands\\rejectpermit\\rejectpermitcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{714FD1E2-E6DE-4680-9F4D-A61BFDD63A4F}|Domain\\Domain.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\domain\\permits\\permit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{714FD1E2-E6DE-4680-9F4D-A61BFDD63A4F}|Domain\\Domain.csproj|solutionrelative:domain\\permits\\permit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED7004B9-DD99-4F95-83EF-8814DD727725}|Infrustructure\\Infrustructure.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\infrustructure\\fileservice\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED7004B9-DD99-4F95-83EF-8814DD727725}|Infrustructure\\Infrustructure.csproj|solutionrelative:infrustructure\\fileservice\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\dtos\\attachments\\createattachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\dtos\\attachments\\createattachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\persistance\\tenantdb\\repositories\\visitors\\visitorqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|solutionrelative:persistance\\tenantdb\\repositories\\visitors\\visitorqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{714FD1E2-E6DE-4680-9F4D-A61BFDD63A4F}|Domain\\Domain.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\domain\\visitors\\repositories\\ivisitorqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{714FD1E2-E6DE-4680-9F4D-A61BFDD63A4F}|Domain\\Domain.csproj|solutionrelative:domain\\visitors\\repositories\\ivisitorqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\dtos\\permits\\permitdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\dtos\\permits\\permitdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\dtos\\visitors\\visitordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\dtos\\visitors\\visitordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\dtos\\permits\\permitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\dtos\\permits\\permitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\mapping\\attachments\\attachmentmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\mapping\\attachments\\attachmentmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\dtos\\visitors\\createvisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\dtos\\visitors\\createvisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\dtos\\belongings\\createbelonging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\dtos\\belongings\\createbelonging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\dtos\\belongings\\belongingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\dtos\\belongings\\belongingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\dtos\\attachments\\attachmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\dtos\\attachments\\attachmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{714FD1E2-E6DE-4680-9F4D-A61BFDD63A4F}|Domain\\Domain.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\domain\\permits\\repositories\\ipermitqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{714FD1E2-E6DE-4680-9F4D-A61BFDD63A4F}|Domain\\Domain.csproj|solutionrelative:domain\\permits\\repositories\\ipermitqueryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{714FD1E2-E6DE-4680-9F4D-A61BFDD63A4F}|Domain\\Domain.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\domain\\permits\\repositories\\paginationdirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{714FD1E2-E6DE-4680-9F4D-A61BFDD63A4F}|Domain\\Domain.csproj|solutionrelative:domain\\permits\\repositories\\paginationdirection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\queries\\getpermitspaged\\paginatepermitshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\queries\\getpermitspaged\\paginatepermitshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\queries\\getpermitspaged\\paginatepermits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\queries\\getpermitspaged\\paginatepermits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\queries\\getpermitdetails\\getpermitdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\queries\\getpermitdetails\\getpermitdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\mapping\\permits\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\mapping\\permits\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\mapping\\belongings\\belongingmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\mapping\\belongings\\belongingmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\mapping\\visitors\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\mapping\\visitors\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\queries\\getpermithistory\\getpermithistoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\queries\\getpermithistory\\getpermithistoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\queries\\getpermitentrylog\\getpermitentrylogquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\queries\\getpermitentrylog\\getpermitentrylogquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\mapping\\entrylogs\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\mapping\\entrylogs\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\mapping\\permittracks\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\mapping\\permittracks\\mapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\persistance\\tenantdb\\tenantdbconfiguration\\entrylogconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|solutionrelative:persistance\\tenantdb\\tenantdbconfiguration\\entrylogconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\persistance\\tenantdb\\tenantdbconfiguration\\permitupdaterequestconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|solutionrelative:persistance\\tenantdb\\tenantdbconfiguration\\permitupdaterequestconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\dtos\\entrylogs\\entrylogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\dtos\\entrylogs\\entrylogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\dtos\\permittracks\\permittrackdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\dtos\\permittracks\\permittrackdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\queries\\getlatest\\getlatestpermitsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\queries\\getlatest\\getlatestpermitsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\queries\\getvisitorpermits\\getvistorpermitsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\queries\\getvisitorpermits\\getvistorpermitsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\permits\\queries\\searchbydate\\searchpermitbydate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\permits\\queries\\searchbydate\\searchpermitbydate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +214,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +222,616 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExtendPermitCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\ExtendPermit\\ExtendPermitCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Commands\\ExtendPermit\\ExtendPermitCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\ExtendPermit\\ExtendPermitCommandHandler.cs",
+              "RelativeToolTip": "Application\\Permits\\Commands\\ExtendPermit\\ExtendPermitCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T04:16:32.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreatePermitValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\Validators\\CreatePermitValidator.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Commands\\Validators\\CreatePermitValidator.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\Validators\\CreatePermitValidator.cs",
+              "RelativeToolTip": "Application\\Permits\\Commands\\Validators\\CreatePermitValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T03:21:48.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExtendPermitCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\Validators\\ExtendPermitCommandValidator.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Commands\\Validators\\ExtendPermitCommandValidator.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\Validators\\ExtendPermitCommandValidator.cs",
+              "RelativeToolTip": "Application\\Permits\\Commands\\Validators\\ExtendPermitCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T04:30:08.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PermitQueryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\Repositories\\Permits\\PermitQueryRepository.cs",
+              "RelativeDocumentMoniker": "Persistance\\TenantDb\\Repositories\\Permits\\PermitQueryRepository.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\Repositories\\Permits\\PermitQueryRepository.cs",
+              "RelativeToolTip": "Persistance\\TenantDb\\Repositories\\Permits\\PermitQueryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T00:16:11.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PermitCommandRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\Repositories\\Permits\\PermitCommandRepository.cs",
+              "RelativeDocumentMoniker": "Persistance\\TenantDb\\Repositories\\Permits\\PermitCommandRepository.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\Repositories\\Permits\\PermitCommandRepository.cs",
+              "RelativeToolTip": "Persistance\\TenantDb\\Repositories\\Permits\\PermitCommandRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T04:08:12.695Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CreatePermitCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\CreatePermit\\CreatePermitCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Commands\\CreatePermit\\CreatePermitCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\CreatePermit\\CreatePermitCommandHandler.cs",
+              "RelativeToolTip": "Application\\Permits\\Commands\\CreatePermit\\CreatePermitCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T04:00:37.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PermitCreatedDomainEventHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Notification\\Permits\\PermitCreatedDomainEventHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Notification\\Permits\\PermitCreatedDomainEventHandler.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Notification\\Permits\\PermitCreatedDomainEventHandler.cs",
+              "RelativeToolTip": "Application\\Notification\\Permits\\PermitCreatedDomainEventHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T06:15:55.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RejectPermitCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\RejectPermit\\RejectPermitCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Commands\\RejectPermit\\RejectPermitCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\RejectPermit\\RejectPermitCommandHandler.cs",
+              "RelativeToolTip": "Application\\Permits\\Commands\\RejectPermit\\RejectPermitCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T06:15:04.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApprovePermitCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\ApprovePermit\\ApprovePermitCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Commands\\ApprovePermit\\ApprovePermitCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\ApprovePermit\\ApprovePermitCommandHandler.cs",
+              "RelativeToolTip": "Application\\Permits\\Commands\\ApprovePermit\\ApprovePermitCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T04:01:44.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApprovePermitCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\ApprovePermit\\ApprovePermitCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Commands\\ApprovePermit\\ApprovePermitCommand.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\ApprovePermit\\ApprovePermitCommand.cs",
+              "RelativeToolTip": "Application\\Permits\\Commands\\ApprovePermit\\ApprovePermitCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T04:12:15.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GlobalUsing.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\GlobalUsing.cs",
+              "RelativeDocumentMoniker": "Application\\GlobalUsing.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\GlobalUsing.cs",
+              "RelativeToolTip": "Application\\GlobalUsing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T03:34:41.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DeletePermitCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\DeletePermit\\DeletePermitCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Commands\\DeletePermit\\DeletePermitCommand.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\DeletePermit\\DeletePermitCommand.cs",
+              "RelativeToolTip": "Application\\Permits\\Commands\\DeletePermit\\DeletePermitCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T05:00:11.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "PermitController.cs",
               "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\Controllers\\V1\\PermitController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\V1\\PermitController.cs",
               "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\Controllers\\V1\\PermitController.cs",
               "RelativeToolTip": "Presentation\\Controllers\\V1\\PermitController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T03:43:47.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T03:43:47.163Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Presentation\\DependencyInjection.cs",
               "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\DependencyInjection.cs",
               "RelativeToolTip": "Presentation\\DependencyInjection.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAQwEAAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAiwEgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T03:42:51.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PermitTrackConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbConfiguration\\PermitTrackConfiguration.cs",
+              "RelativeDocumentMoniker": "Persistance\\TenantDb\\TenantDbConfiguration\\PermitTrackConfiguration.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbConfiguration\\PermitTrackConfiguration.cs",
+              "RelativeToolTip": "Persistance\\TenantDb\\TenantDbConfiguration\\PermitTrackConfiguration.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:06:31.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GlobalUsing.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\GlobalUsing.cs",
+              "RelativeDocumentMoniker": "Presentation\\GlobalUsing.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\GlobalUsing.cs",
+              "RelativeToolTip": "Presentation\\GlobalUsing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T05:36:33.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreatePermitCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\CreatePermit\\CreatePermitCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Commands\\CreatePermit\\CreatePermitCommand.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\CreatePermit\\CreatePermitCommand.cs",
+              "RelativeToolTip": "Application\\Permits\\Commands\\CreatePermit\\CreatePermitCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T03:14:42.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ExtendPermitCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\ExtendPermit\\ExtendPermitCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Commands\\ExtendPermit\\ExtendPermitCommand.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\ExtendPermit\\ExtendPermitCommand.cs",
+              "RelativeToolTip": "Application\\Permits\\Commands\\ExtendPermit\\ExtendPermitCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T04:21:20.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RejectPermitCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\RejectPermit\\RejectPermitCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Commands\\RejectPermit\\RejectPermitCommand.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Commands\\RejectPermit\\RejectPermitCommand.cs",
+              "RelativeToolTip": "Application\\Permits\\Commands\\RejectPermit\\RejectPermitCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T04:12:04.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Permit.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Domain\\Permits\\Permit.cs",
+              "RelativeDocumentMoniker": "Domain\\Permits\\Permit.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Domain\\Permits\\Permit.cs",
+              "RelativeToolTip": "Domain\\Permits\\Permit.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAmwGcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T03:01:42.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Infrustructure\\FileService\\FileService.cs",
+              "RelativeDocumentMoniker": "Infrustructure\\FileService\\FileService.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Infrustructure\\FileService\\FileService.cs",
+              "RelativeToolTip": "Infrustructure\\FileService\\FileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T03:59:28.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "VisitorQueryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\Repositories\\Visitors\\VisitorQueryRepository.cs",
+              "RelativeDocumentMoniker": "Persistance\\TenantDb\\Repositories\\Visitors\\VisitorQueryRepository.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\Repositories\\Visitors\\VisitorQueryRepository.cs",
+              "RelativeToolTip": "Persistance\\TenantDb\\Repositories\\Visitors\\VisitorQueryRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T03:24:22.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IVisitorQueryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Domain\\Visitors\\Repositories\\IVisitorQueryRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Visitors\\Repositories\\IVisitorQueryRepository.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Domain\\Visitors\\Repositories\\IVisitorQueryRepository.cs",
+              "RelativeToolTip": "Domain\\Visitors\\Repositories\\IVisitorQueryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T03:22:50.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CreateAttachment.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Attachments\\CreateAttachment.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Attachments\\CreateAttachment.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Attachments\\CreateAttachment.cs",
+              "RelativeToolTip": "Application\\Dtos\\Attachments\\CreateAttachment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T02:54:01.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CreateVisitor.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Visitors\\CreateVisitor.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Visitors\\CreateVisitor.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Visitors\\CreateVisitor.cs",
+              "RelativeToolTip": "Application\\Dtos\\Visitors\\CreateVisitor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T02:54:53.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CreateBelonging.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Belongings\\CreateBelonging.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Belongings\\CreateBelonging.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Belongings\\CreateBelonging.cs",
+              "RelativeToolTip": "Application\\Dtos\\Belongings\\CreateBelonging.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T02:54:38.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PermitDto.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Permits\\PermitDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Permits\\PermitDto.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Permits\\PermitDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\Permits\\PermitDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T17:09:49.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PermitDetailsDto.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Permits\\PermitDetailsDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Permits\\PermitDetailsDto.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Permits\\PermitDetailsDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\Permits\\PermitDetailsDto.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:50:31.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "VisitorDto.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Visitors\\VisitorDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Visitors\\VisitorDto.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Visitors\\VisitorDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\Visitors\\VisitorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:40:29.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AttachmentMapping.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\Attachments\\AttachmentMapping.cs",
+              "RelativeDocumentMoniker": "Application\\Mapping\\Attachments\\AttachmentMapping.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\Attachments\\AttachmentMapping.cs",
+              "RelativeToolTip": "Application\\Mapping\\Attachments\\AttachmentMapping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:44:05.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "GetPermitDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetPermitDetails\\GetPermitDetails.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Queries\\GetPermitDetails\\GetPermitDetails.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetPermitDetails\\GetPermitDetails.cs",
+              "RelativeToolTip": "Application\\Permits\\Queries\\GetPermitDetails\\GetPermitDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T17:14:36.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "BelongingDto.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Belongings\\BelongingDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Belongings\\BelongingDto.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Belongings\\BelongingDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\Belongings\\BelongingDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:39:09.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AttachmentDto.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Attachments\\AttachmentDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\Attachments\\AttachmentDto.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\Attachments\\AttachmentDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\Attachments\\AttachmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:17:39.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IPermitQueryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Domain\\Permits\\Repositories\\IPermitQueryRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Permits\\Repositories\\IPermitQueryRepository.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Domain\\Permits\\Repositories\\IPermitQueryRepository.cs",
+              "RelativeToolTip": "Domain\\Permits\\Repositories\\IPermitQueryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T00:29:05.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PaginatePermitsHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetPermitsPaged\\PaginatePermitsHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Queries\\GetPermitsPaged\\PaginatePermitsHandler.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetPermitsPaged\\PaginatePermitsHandler.cs",
+              "RelativeToolTip": "Application\\Permits\\Queries\\GetPermitsPaged\\PaginatePermitsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T00:31:05.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PaginationDirection.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Domain\\Permits\\Repositories\\PaginationDirection.cs",
+              "RelativeDocumentMoniker": "Domain\\Permits\\Repositories\\PaginationDirection.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Domain\\Permits\\Repositories\\PaginationDirection.cs",
+              "RelativeToolTip": "Domain\\Permits\\Repositories\\PaginationDirection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T01:43:20.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PaginatePermits.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetPermitsPaged\\PaginatePermits.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Queries\\GetPermitsPaged\\PaginatePermits.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetPermitsPaged\\PaginatePermits.cs",
+              "RelativeToolTip": "Application\\Permits\\Queries\\GetPermitsPaged\\PaginatePermits.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T02:24:03.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Mapping.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\Permits\\Mapping.cs",
+              "RelativeDocumentMoniker": "Application\\Mapping\\Permits\\Mapping.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\Permits\\Mapping.cs",
+              "RelativeToolTip": "Application\\Mapping\\Permits\\Mapping.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T17:11:51.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "BelongingMapping.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\Belongings\\BelongingMapping.cs",
+              "RelativeDocumentMoniker": "Application\\Mapping\\Belongings\\BelongingMapping.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\Belongings\\BelongingMapping.cs",
+              "RelativeToolTip": "Application\\Mapping\\Belongings\\BelongingMapping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:45:53.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Mapping.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\Visitors\\Mapping.cs",
+              "RelativeDocumentMoniker": "Application\\Mapping\\Visitors\\Mapping.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\Visitors\\Mapping.cs",
+              "RelativeToolTip": "Application\\Mapping\\Visitors\\Mapping.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwAkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:42:12.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "GetPermitHistoryQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetPermitHistory\\GetPermitHistoryQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Queries\\GetPermitHistory\\GetPermitHistoryQuery.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetPermitHistory\\GetPermitHistoryQuery.cs",
+              "RelativeToolTip": "Application\\Permits\\Queries\\GetPermitHistory\\GetPermitHistoryQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:10:35.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "GetPermitEntryLogQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetPermitEntryLog\\GetPermitEntryLogQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Queries\\GetPermitEntryLog\\GetPermitEntryLogQuery.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetPermitEntryLog\\GetPermitEntryLogQuery.cs",
+              "RelativeToolTip": "Application\\Permits\\Queries\\GetPermitEntryLog\\GetPermitEntryLogQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:07:25.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "EntryLogConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbConfiguration\\EntryLogConfiguration.cs",
+              "RelativeDocumentMoniker": "Persistance\\TenantDb\\TenantDbConfiguration\\EntryLogConfiguration.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbConfiguration\\EntryLogConfiguration.cs",
+              "RelativeToolTip": "Persistance\\TenantDb\\TenantDbConfiguration\\EntryLogConfiguration.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA2wBgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:05:45.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "PermitUpdateRequestConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbConfiguration\\PermitUpdateRequestConfiguration.cs",
+              "RelativeDocumentMoniker": "Persistance\\TenantDb\\TenantDbConfiguration\\PermitUpdateRequestConfiguration.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbConfiguration\\PermitUpdateRequestConfiguration.cs",
+              "RelativeToolTip": "Persistance\\TenantDb\\TenantDbConfiguration\\PermitUpdateRequestConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:05:35.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Mapping.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\PermitTracks\\Mapping.cs",
+              "RelativeDocumentMoniker": "Application\\Mapping\\PermitTracks\\Mapping.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\PermitTracks\\Mapping.cs",
+              "RelativeToolTip": "Application\\Mapping\\PermitTracks\\Mapping.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:02:17.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Mapping.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\EntryLogs\\Mapping.cs",
+              "RelativeDocumentMoniker": "Application\\Mapping\\EntryLogs\\Mapping.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\EntryLogs\\Mapping.cs",
+              "RelativeToolTip": "Application\\Mapping\\EntryLogs\\Mapping.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA8wBMAAAB/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:57:51.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PermitTrackDto.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\PermitTracks\\PermitTrackDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\PermitTracks\\PermitTrackDto.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\PermitTracks\\PermitTrackDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\PermitTracks\\PermitTrackDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:55:14.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "EntryLogDto.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\EntryLogs\\EntryLogDto.cs",
+              "RelativeDocumentMoniker": "Application\\Dtos\\EntryLogs\\EntryLogDto.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Dtos\\EntryLogs\\EntryLogDto.cs",
+              "RelativeToolTip": "Application\\Dtos\\EntryLogs\\EntryLogDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:52:01.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "GetLatestPermitsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetLatest\\GetLatestPermitsQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Queries\\GetLatest\\GetLatestPermitsQuery.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetLatest\\GetLatestPermitsQuery.cs",
+              "RelativeToolTip": "Application\\Permits\\Queries\\GetLatest\\GetLatestPermitsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:37:11.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "SearchPermitByDate.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\SearchByDate\\SearchPermitByDate.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Queries\\SearchByDate\\SearchPermitByDate.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\SearchByDate\\SearchPermitByDate.cs",
+              "RelativeToolTip": "Application\\Permits\\Queries\\SearchByDate\\SearchPermitByDate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:33:38.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "GetVistorPermitsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetVisitorPermits\\GetVistorPermitsQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Permits\\Queries\\GetVisitorPermits\\GetVistorPermitsQuery.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Permits\\Queries\\GetVisitorPermits\\GetVistorPermitsQuery.cs",
+              "RelativeToolTip": "Application\\Permits\\Queries\\GetVisitorPermits\\GetVistorPermitsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:29:40.343Z"
             }
           ]
         }

@@ -204,3 +204,4 @@ C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Presentation.Test\
 C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Presentation.Test\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Presentation.Test\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Presentation.Test\obj\Debug\net8.0\Presenta.F5843D36.Up2Date
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Presentation.Test\obj\Debug\net8.0\Presentation.Test.sourcelink.json

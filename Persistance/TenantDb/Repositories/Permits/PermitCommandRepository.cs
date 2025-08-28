@@ -1,4 +1,5 @@
 ﻿using Domain.Permits.Repositories;
+using Microsoft.Data.SqlClient;
 
 namespace Persistence.TenantDb.Repositories.Permits;
 
@@ -8,9 +9,23 @@ public class PermitCommandRepository(TenantDbContext dbContext) : IPermitCommand
                                                     => await dbContext.Permits.AddAsync(permit, cancellationToken);
 
 
-    public void DeleteAsync(Permit permit) => dbContext.Permits.Remove(permit);
+    public void Delete(Permit permit) => dbContext.Permits.Remove(permit);
 
+    public async Task DeleteDependenciesAsync(string permitId)
+    {
+        var id = new SqlParameter("@id", permitId);
 
-    public void UpdateAsync(Permit permit) => dbContext.Permits.Update(permit);
+        var sql = @"
+        DELETE FROM Attachment WHERE PermitId = @id;
+        DELETE FROM Belonging WHERE PermitId = @id;
+        DELETE FROM PermitTrack WHERE PermitId = @id;
+        DELETE FROM PermitUpdateRequest WHERE PermitId = @id;
+        DELETE FROM EntryLog WHERE PermitId = @id;
+    ";
+
+        await dbContext.Database.ExecuteSqlRawAsync(sql, id);
+    }
+
+    public void Update(Permit permit) => dbContext.Permits.Update(permit);
 
 }

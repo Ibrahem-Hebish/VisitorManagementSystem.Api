@@ -38,6 +38,9 @@ public class PermitTrackConfiguration : IEntityTypeConfiguration<PermitTrack>
             )
            .IsRequired();
 
+        builder.Navigation(x => x.HandledBy)
+            .AutoInclude();
+
 
     }
 }

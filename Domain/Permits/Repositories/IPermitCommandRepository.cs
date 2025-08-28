@@ -3,6 +3,7 @@
 public interface IPermitCommandRepository
 {
     Task CreateAsync(Permit permit, CancellationToken cancellationToken = default);
-    void DeleteAsync(Permit permit);
-    void UpdateAsync(Permit permit);
+    void Delete(Permit permit);
+    Task DeleteDependenciesAsync(string permitId);
+    void Update(Permit permit);
 }

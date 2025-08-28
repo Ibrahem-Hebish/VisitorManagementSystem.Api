@@ -82,26 +82,26 @@ public class Permit : AggregateRoot, IMultiTenant
         Raise(new PermitCanceledDomainEvent(PermitId, Visitor.Email));
 
     }
-    public void Approve(Manager manager)
+    public void Approve(UserId managerId)
     {
         if (Status != PermitStatus.Pending)
             throw new InvalidOperationException("Only pending permits can be approved.");
 
         Status = PermitStatus.Approved;
-        HandledBy = manager.Id;
+        HandledBy = managerId;
         UpdatedAt = DateTime.UtcNow;
 
         Raise(new PermitApprovedDomainEvent(PermitId, Visitor.Email));
 
     }
 
-    public void Reject(Manager manager)
+    public void Reject(UserId managerId)
     {
         if (Status != PermitStatus.Pending)
             throw new InvalidOperationException("Only pending permits can be rejected.");
 
         Status = PermitStatus.Rejected;
-        HandledBy = manager.Id;
+        HandledBy = managerId;
         UpdatedAt = DateTime.UtcNow;
 
         Raise(new PermitRejectedDomainEvent(PermitId, Visitor.Email));
@@ -120,8 +120,10 @@ public class Permit : AggregateRoot, IMultiTenant
     }
 
     public void AddAttachment(Attachment attachment) => _attachments.Add(attachment);
+    public void AddAttachmentList(List<Attachment> attachments) => _attachments.AddRange(attachments);
     public void RemoveAttachment(Attachment attachment) => _attachments.Remove(attachment);
     public void AddBelonging(Belonging belonging) => _belongings.Add(belonging);
+    public void AddBelongingList(List<Belonging> belongings) => _belongings.AddRange(belongings);
     public void RemoveBelonging(Belonging belonging) => _belongings.Remove(belonging);
     public void AddPermitTrack(PermitTrack permitTrack) => _permitTracks.Add(permitTrack);
     public void RemovePermitTrack(PermitTrack permitTrack) => _permitTracks.Remove(permitTrack);

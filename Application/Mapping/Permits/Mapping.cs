@@ -3,21 +3,32 @@ using Domain.Permits;
 
 namespace Application.Mapping.Permits;
 
-public partial class Mapping : Profile
+public partial class PermitMapping : Profile
 {
-    public Mapping()
+    public PermitMapping()
     {
-        MapDto();
+        MapPermitDto();
+        MapPermitDetails();
     }
 }
 
-public partial class Mapping
+public partial class PermitMapping
 {
-    public void MapDto()
+    public void MapPermitDto()
     {
         CreateMap<Permit, PermitDto>()
             .ForMember(dest => dest.PermitId, src => src.MapFrom(p => p.PermitId.Id.ToString()))
             .ForMember(dest => dest.BuldingName, src => src.MapFrom(p => p.Building.ToString()));
 
+    }
+}
+
+public partial class PermitMapping
+{
+    public void MapPermitDetails()
+    {
+        CreateMap<Permit, PermitDetailsDto>()
+            .ForMember(dest => dest.PermitId, src => src.MapFrom(p => p.PermitId.Id.ToString()))
+            .ForMember(dest => dest.BuldingName, src => src.MapFrom(p => p.Building.ToString()));
     }
 }

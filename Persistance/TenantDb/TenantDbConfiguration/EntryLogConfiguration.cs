@@ -18,6 +18,12 @@ public class EntryLogConfiguration : IEntityTypeConfiguration<Entrylog>
         builder.Property(x => x.EntryTime)
             .IsRequired();
 
+        builder.Navigation(x => x.Employee)
+            .AutoInclude();
+
+        builder.Navigation(x => x.Visitor)
+            .AutoInclude();
+
         builder.Property(x => x.IsInside)
             .IsRequired();
 
