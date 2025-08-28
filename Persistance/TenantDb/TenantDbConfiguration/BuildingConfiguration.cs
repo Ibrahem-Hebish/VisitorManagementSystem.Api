@@ -14,8 +14,8 @@ public class BuildingConfiguration : IEntityTypeConfiguration<Building>
 
         builder.Property(x => x.Id)
             .HasConversion(
-                           id => id.ToString(),
-                           value => new BuildingId(Guid.Parse(value)))
+                           id => id.Id,
+                           value => new BuildingId(value))
             .IsRequired();
 
         builder.Property(x => x.FloorNumbers)
@@ -23,8 +23,8 @@ public class BuildingConfiguration : IEntityTypeConfiguration<Building>
 
         builder.Property(x => x.BranchId)
             .HasConversion(
-                         id => id.Guid.ToString(),
-                         value => new BranchId(Guid.Parse(value)))
+                         id => id.Guid,
+                         value => new BranchId(value))
             .IsRequired();
 
 

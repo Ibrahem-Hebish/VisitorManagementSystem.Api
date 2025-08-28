@@ -1,6 +1,7 @@
 ﻿using Domain.Branches.DomainEvents;
 using Domain.EntryLogs;
 using Domain.Tenants;
+using Domain.VisitorPermits;
 
 namespace Domain.Branches;
 
@@ -15,6 +16,9 @@ public class Branch : Entity
     public Tenant Tenant { get; private set; }
     private readonly List<Visitor> _visitors = [];
     public IReadOnlyCollection<Visitor> Visitors => _visitors.AsReadOnly();
+    private readonly List<VisitorPermit> _vistorPermits = [];
+    public IReadOnlyCollection<VisitorPermit> VisitorPermits => _vistorPermits.AsReadOnly();
+
     private readonly List<Building> _buildings = [];
     public IReadOnlyCollection<Building> Buildings => _buildings.AsReadOnly();
     private readonly List<Employee> _employees = [];

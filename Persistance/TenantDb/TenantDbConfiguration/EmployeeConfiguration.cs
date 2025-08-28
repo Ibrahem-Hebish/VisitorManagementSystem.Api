@@ -8,8 +8,8 @@ public class EmployeeConfiguration : IEntityTypeConfiguration<Employee>
 
         builder.Property(x => x.BranchId)
             .HasConversion(
-                         id => id.Guid.ToString(),
-                         value => new BranchId(Guid.Parse(value)))
+                         id => id.Guid,
+                         value => new BranchId(value))
             .IsRequired();
 
         builder.Property(x => x.Position)

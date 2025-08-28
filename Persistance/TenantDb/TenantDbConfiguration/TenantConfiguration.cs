@@ -12,8 +12,8 @@ public class TenantConfiguration : IEntityTypeConfiguration<Tenant>
 
         builder.Property(x => x.Id)
            .HasConversion(
-                     id => id.Guid.ToString(),
-                     value => new TenantId(Guid.Parse(value)))
+                     id => id.Guid,
+                     value => new TenantId(value))
                      .IsRequired();
 
         builder.HasKey(x => x.Id);

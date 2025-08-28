@@ -12,8 +12,8 @@ public class BranchConfiguration : IEntityTypeConfiguration<Branch>
 
         builder.Property(x => x.Id)
             .HasConversion(
-                         id => id.Guid.ToString(),
-                         value => new BranchId(Guid.Parse(value)))
+                         id => id.Guid,
+                         value => new BranchId(value))
                          .IsRequired();
 
         builder.HasKey(x => x.Id);
@@ -44,8 +44,8 @@ public class BranchConfiguration : IEntityTypeConfiguration<Branch>
 
         builder.Property(x => x.TenantId)
             .HasConversion(
-                          id => id.Guid.ToString(),
-                          value => new TenantId(Guid.Parse(value)))
+                          id => id.Guid,
+                          value => new TenantId(value))
             .IsRequired();
 
 
@@ -94,6 +94,10 @@ public class BranchConfiguration : IEntityTypeConfiguration<Branch>
             .HasForeignKey(pur => pur.BranchId)
             .OnDelete(DeleteBehavior.Cascade);
 
+        builder.HasMany(b => b.VisitorPermits)
+           .WithOne(vp => vp.Branch)
+           .HasForeignKey(vp => vp.BranchId)
+           .OnDelete(DeleteBehavior.Cascade);
 
     }
 }

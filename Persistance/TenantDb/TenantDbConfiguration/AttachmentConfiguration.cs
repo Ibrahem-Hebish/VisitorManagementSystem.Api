@@ -9,8 +9,8 @@ public class AttachmentConfiguration : IEntityTypeConfiguration<Attachment>
         builder.ToTable(nameof(Attachment));
         builder.Property(x => x.AttachmentId)
             .HasConversion(
-                         id => id.Id.ToString(),
-                         value => new AttachmentId(Guid.Parse(value)))
+                         id => id.Id,
+                         value => new AttachmentId(value))
             .IsRequired();
 
         builder.HasKey(x => x.AttachmentId);
@@ -25,14 +25,14 @@ public class AttachmentConfiguration : IEntityTypeConfiguration<Attachment>
 
         builder.Property(x => x.BranchId)
             .HasConversion(
-                         id => id.Guid.ToString(),
-                         value => new BranchId(Guid.Parse(value)))
+                         id => id.Guid,
+                         value => new BranchId(value))
             .IsRequired();
 
         builder.Property(x => x.PermitId)
            .HasConversion(
-                        id => id.Id.ToString(),
-                        value => new PermitId(Guid.Parse(value)))
+                        id => id.Id,
+                        value => new PermitId(value))
                         .IsRequired();
     }
 }

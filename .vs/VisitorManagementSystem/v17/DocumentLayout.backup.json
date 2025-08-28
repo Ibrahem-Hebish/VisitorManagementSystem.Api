@@ -3,12 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\presentation\\controllers\\v1\\permitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\v1\\permitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\mapping\\branchs\\branchmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\mapping\\branchs\\branchmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\presentation\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|solutionrelative:presentation\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\presentation\\controllers\\v1\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\v1\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\application\\admin\\createtenantadmin\\createbranchadmincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{008F3D3F-5764-4A58-B13B-E3178D0AA45B}|Application\\Application.csproj|solutionrelative:application\\admin\\createtenantadmin\\createbranchadmincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\persistance\\tenantdb\\tenantdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|solutionrelative:persistance\\tenantdb\\tenantdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\presentation\\filters\\tenantfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F8258DF-8505-42C3-9B6C-4DB2D4E3CD43}|Presentation\\Presentation.csproj|solutionrelative:presentation\\filters\\tenantfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED7004B9-DD99-4F95-83EF-8814DD727725}|Infrustructure\\Infrustructure.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\infrustructure\\tenants\\tenantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED7004B9-DD99-4F95-83EF-8814DD727725}|Infrustructure\\Infrustructure.csproj|solutionrelative:infrustructure\\tenants\\tenantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829030515_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Persistance\\Migrations\\Tenant\\20250829030515_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\persistance\\tenantdb\\tenantdbconfiguration\\permitconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|solutionrelative:persistance\\tenantdb\\tenantdbconfiguration\\permitconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829030414_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Persistance\\Migrations\\Tenant\\20250829030414_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829030205_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Persistance\\Migrations\\Tenant\\20250829030205_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{714FD1E2-E6DE-4680-9F4D-A61BFDD63A4F}|Domain\\Domain.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\domain\\visitorpermits\\visitorpermit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{714FD1E2-E6DE-4680-9F4D-A61BFDD63A4F}|Domain\\Domain.csproj|solutionrelative:domain\\visitorpermits\\visitorpermit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829025924_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Persistance\\Migrations\\Tenant\\20250829025924_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\persistance\\tenantdb\\tenantdbconfiguration\\entrylogconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|solutionrelative:persistance\\tenantdb\\tenantdbconfiguration\\entrylogconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|c:\\users\\super magic\\onedrive\\desktop\\visitormanagementsystem\\persistance\\tenantdb\\tenantdbconfiguration\\visitorpermitconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7652351B-44FB-4471-9904-8E0A3DD77214}|Persistance\\Persistence.csproj|solutionrelative:persistance\\tenantdb\\tenantdbconfiguration\\visitorpermitconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829025547_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Persistance\\Migrations\\Tenant\\20250829025547_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829025142_Modify the relation between visitor and permit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Persistance\\Migrations\\Tenant\\20250829025142_Modify the relation between visitor and permit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829024217_Modify the relaton between visitor and permit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Persistance\\Migrations\\Tenant\\20250829024217_Modify the relaton between visitor and permit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829024206_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Persistance\\Migrations\\Tenant\\20250829024206_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829024145_Modify the relaton between visitor and permit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Persistance\\Migrations\\Tenant\\20250829024145_Modify the relaton between visitor and permit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +95,248 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PermitController.cs",
-              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\Controllers\\V1\\PermitController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\V1\\PermitController.cs",
-              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\Controllers\\V1\\PermitController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\V1\\PermitController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "Title": "BranchMapping.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\Branchs\\BranchMapping.cs",
+              "RelativeDocumentMoniker": "Application\\Mapping\\Branchs\\BranchMapping.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Mapping\\Branchs\\BranchMapping.cs*",
+              "RelativeToolTip": "Application\\Mapping\\Branchs\\BranchMapping.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T03:43:47.163Z",
+              "WhenOpened": "2025-08-29T03:51:37.997Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Presentation\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\DependencyInjection.cs",
-              "RelativeToolTip": "Presentation\\DependencyInjection.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAQwEAAAAA1AAAAAAAAAA==",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\Controllers\\V1\\AdminController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\V1\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\Controllers\\V1\\AdminController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\V1\\AdminController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAApwGoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T03:42:51.064Z",
+              "WhenOpened": "2025-08-29T03:46:00.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateBranchAdminCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Admin\\CreateTenantAdmin\\CreateBranchAdminCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Admin\\CreateTenantAdmin\\CreateBranchAdminCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Application\\Admin\\CreateTenantAdmin\\CreateBranchAdminCommandHandler.cs",
+              "RelativeToolTip": "Application\\Admin\\CreateTenantAdmin\\CreateBranchAdminCommandHandler.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAApwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T03:45:34.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TenantFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\Filters\\TenantFilter.cs",
+              "RelativeDocumentMoniker": "Presentation\\Filters\\TenantFilter.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\Filters\\TenantFilter.cs",
+              "RelativeToolTip": "Presentation\\Filters\\TenantFilter.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAApwDoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T03:37:04.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250829030515_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829030515_Initial.cs",
+              "RelativeDocumentMoniker": "Persistance\\Migrations\\Tenant\\20250829030515_Initial.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829030515_Initial.cs",
+              "RelativeToolTip": "Persistance\\Migrations\\Tenant\\20250829030515_Initial.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T03:05:15.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20250829030414_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829030414_Initial.cs",
+              "RelativeDocumentMoniker": "Persistance\\Migrations\\Tenant\\20250829030414_Initial.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829030414_Initial.cs",
+              "RelativeToolTip": "Persistance\\Migrations\\Tenant\\20250829030414_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T03:04:14.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20250829030205_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829030205_Initial.cs",
+              "RelativeDocumentMoniker": "Persistance\\Migrations\\Tenant\\20250829030205_Initial.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829030205_Initial.cs",
+              "RelativeToolTip": "Persistance\\Migrations\\Tenant\\20250829030205_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T03:02:06.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250829025924_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829025924_Initial.cs",
+              "RelativeDocumentMoniker": "Persistance\\Migrations\\Tenant\\20250829025924_Initial.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829025924_Initial.cs",
+              "RelativeToolTip": "Persistance\\Migrations\\Tenant\\20250829025924_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:59:24.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TenantDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbContext.cs",
+              "RelativeDocumentMoniker": "Persistance\\TenantDb\\TenantDbContext.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbContext.cs",
+              "RelativeToolTip": "Persistance\\TenantDb\\TenantDbContext.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAmwCsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:43:20.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TenantService.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Infrustructure\\Tenants\\TenantService.cs",
+              "RelativeDocumentMoniker": "Infrustructure\\Tenants\\TenantService.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Infrustructure\\Tenants\\TenantService.cs",
+              "RelativeToolTip": "Infrustructure\\Tenants\\TenantService.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAlwFoAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T03:06:34.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EntryLogConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbConfiguration\\EntryLogConfiguration.cs",
+              "RelativeDocumentMoniker": "Persistance\\TenantDb\\TenantDbConfiguration\\EntryLogConfiguration.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbConfiguration\\EntryLogConfiguration.cs",
+              "RelativeToolTip": "Persistance\\TenantDb\\TenantDbConfiguration\\EntryLogConfiguration.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwDcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:57:05.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PermitConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbConfiguration\\PermitConfiguration.cs",
+              "RelativeDocumentMoniker": "Persistance\\TenantDb\\TenantDbConfiguration\\PermitConfiguration.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbConfiguration\\PermitConfiguration.cs",
+              "RelativeToolTip": "Persistance\\TenantDb\\TenantDbConfiguration\\PermitConfiguration.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAQwEgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:41:17.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VisitorPermitConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbConfiguration\\VisitorPermitConfiguration.cs",
+              "RelativeDocumentMoniker": "Persistance\\TenantDb\\TenantDbConfiguration\\VisitorPermitConfiguration.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\TenantDb\\TenantDbConfiguration\\VisitorPermitConfiguration.cs",
+              "RelativeToolTip": "Persistance\\TenantDb\\TenantDbConfiguration\\VisitorPermitConfiguration.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:50:36.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VisitorPermit.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Domain\\VisitorPermits\\VisitorPermit.cs",
+              "RelativeDocumentMoniker": "Domain\\VisitorPermits\\VisitorPermit.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Domain\\VisitorPermits\\VisitorPermit.cs",
+              "RelativeToolTip": "Domain\\VisitorPermits\\VisitorPermit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:47:36.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20250829025547_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829025547_Initial.cs",
+              "RelativeDocumentMoniker": "Persistance\\Migrations\\Tenant\\20250829025547_Initial.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829025547_Initial.cs",
+              "RelativeToolTip": "Persistance\\Migrations\\Tenant\\20250829025547_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:55:48.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250829025142_Modify the relation between visitor and permit.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829025142_Modify the relation between visitor and permit.cs",
+              "RelativeDocumentMoniker": "Persistance\\Migrations\\Tenant\\20250829025142_Modify the relation between visitor and permit.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829025142_Modify the relation between visitor and permit.cs",
+              "RelativeToolTip": "Persistance\\Migrations\\Tenant\\20250829025142_Modify the relation between visitor and permit.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:51:42.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250829024217_Modify the relaton between visitor and permit.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829024217_Modify the relaton between visitor and permit.cs",
+              "RelativeDocumentMoniker": "Persistance\\Migrations\\Tenant\\20250829024217_Modify the relaton between visitor and permit.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829024217_Modify the relaton between visitor and permit.cs",
+              "RelativeToolTip": "Persistance\\Migrations\\Tenant\\20250829024217_Modify the relaton between visitor and permit.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:42:18.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20250829024206_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829024206_Initial.cs",
+              "RelativeDocumentMoniker": "Persistance\\Migrations\\Tenant\\20250829024206_Initial.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829024206_Initial.cs",
+              "RelativeToolTip": "Persistance\\Migrations\\Tenant\\20250829024206_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:42:07.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20250829024145_Modify the relaton between visitor and permit.cs",
+              "DocumentMoniker": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829024145_Modify the relaton between visitor and permit.cs",
+              "RelativeDocumentMoniker": "Persistance\\Migrations\\Tenant\\20250829024145_Modify the relaton between visitor and permit.cs",
+              "ToolTip": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Persistance\\Migrations\\Tenant\\20250829024145_Modify the relaton between visitor and permit.cs",
+              "RelativeToolTip": "Persistance\\Migrations\\Tenant\\20250829024145_Modify the relaton between visitor and permit.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:41:45.793Z",
               "EditorCaption": ""
             }
           ]

@@ -1,4 +1,6 @@
-﻿namespace Domain.Permits;
+﻿using Domain.VisitorPermits;
+
+namespace Domain.Permits;
 
 public class Permit : AggregateRoot, IMultiTenant
 {
@@ -18,8 +20,7 @@ public class Permit : AggregateRoot, IMultiTenant
     public Requester Requester { get; private set; } = null!;
     public UserId? HandledBy { get; private set; }
     public Manager? Handler { get; private set; }
-    public VisitorId VisitorId { get; private set; }
-    public Visitor Visitor { get; private set; }
+
     private readonly List<Attachment> _attachments = [];
     public IReadOnlyCollection<Attachment> Attachments => _attachments.AsReadOnly();
 
@@ -29,14 +30,18 @@ public class Permit : AggregateRoot, IMultiTenant
     public IReadOnlyCollection<PermitTrack> PermitTracks => _permitTracks.AsReadOnly();
     private readonly List<PermitUpdateRequest> _permitUpdateRequests = [];
     public IReadOnlyCollection<PermitUpdateRequest> PermitUpdateRequest => _permitUpdateRequests.AsReadOnly();
+    private readonly List<Visitor> _visitors = [];
+    public IReadOnlyCollection<Visitor> Visitors => _visitors.AsReadOnly();
 
+    private readonly List<VisitorPermit> _vistorPermits = [];
+    public IReadOnlyCollection<VisitorPermit> VisitorPermits => _vistorPermits.AsReadOnly();
     private Permit()
     {
     }
     private Permit(DateTime startDate, DateTime endDate,
         string reason, BuildingId buildingId,
         int floorNumber, UserId requesterId,
-        VisitorId visitorId)
+        List<Visitor> visitors)
     {
         PermitId = new PermitId(Guid.NewGuid());
         StartDate = startDate;
@@ -47,14 +52,14 @@ public class Permit : AggregateRoot, IMultiTenant
         BuildingId = buildingId;
         FloorNumber = floorNumber;
         RequestedBy = requesterId;
-        VisitorId = visitorId;
+        _visitors = visitors;
 
     }
     public static Permit Create(DateTime startDate, DateTime endDate,
                string reason, BuildingId buildingId,
-               int floorNumber, UserId requestedBy, VisitorId visitorId)
+               int floorNumber, UserId requestedBy, List<Visitor> visitors)
     {
-        return new(startDate, endDate, reason, buildingId, floorNumber, requestedBy, visitorId);
+        return new(startDate, endDate, reason, buildingId, floorNumber, requestedBy, visitors);
     }
 
 
@@ -67,7 +72,7 @@ public class Permit : AggregateRoot, IMultiTenant
         EndDate = newEndDate;
         UpdatedAt = DateTime.UtcNow;
 
-        Raise(new PermitExtendedDomainEvent(PermitId, Visitor.Email));
+        Raise(new PermitExtendedDomainEvent(PermitId, null));
 
     }
 
@@ -79,32 +84,32 @@ public class Permit : AggregateRoot, IMultiTenant
         Status = PermitStatus.Cancelled;
         UpdatedAt = DateTime.UtcNow;
 
-        Raise(new PermitCanceledDomainEvent(PermitId, Visitor.Email));
+        Raise(new PermitCanceledDomainEvent(PermitId, null));
 
     }
-    public void Approve(Manager manager)
+    public void Approve(UserId managerId)
     {
         if (Status != PermitStatus.Pending)
             throw new InvalidOperationException("Only pending permits can be approved.");
 
         Status = PermitStatus.Approved;
-        HandledBy = manager.Id;
+        HandledBy = managerId;
         UpdatedAt = DateTime.UtcNow;
 
-        Raise(new PermitApprovedDomainEvent(PermitId, Visitor.Email));
+        Raise(new PermitApprovedDomainEvent(PermitId, null));
 
     }
 
-    public void Reject(Manager manager)
+    public void Reject(UserId managerId)
     {
         if (Status != PermitStatus.Pending)
             throw new InvalidOperationException("Only pending permits can be rejected.");
 
         Status = PermitStatus.Rejected;
-        HandledBy = manager.Id;
+        HandledBy = managerId;
         UpdatedAt = DateTime.UtcNow;
 
-        Raise(new PermitRejectedDomainEvent(PermitId, Visitor.Email));
+        Raise(new PermitRejectedDomainEvent(PermitId, null));
     }
 
     public void Expire(Manager manager)
@@ -115,13 +120,15 @@ public class Permit : AggregateRoot, IMultiTenant
             HandledBy = manager.Id;
             UpdatedAt = DateTime.UtcNow;
 
-            Raise(new PermitExpiredDomainEvent(PermitId, Visitor.Email));
+            Raise(new PermitExpiredDomainEvent(PermitId, null));
         }
     }
 
     public void AddAttachment(Attachment attachment) => _attachments.Add(attachment);
+    public void AddAttachmentList(List<Attachment> attachments) => _attachments.AddRange(attachments);
     public void RemoveAttachment(Attachment attachment) => _attachments.Remove(attachment);
     public void AddBelonging(Belonging belonging) => _belongings.Add(belonging);
+    public void AddBelongingList(List<Belonging> belongings) => _belongings.AddRange(belongings);
     public void RemoveBelonging(Belonging belonging) => _belongings.Remove(belonging);
     public void AddPermitTrack(PermitTrack permitTrack) => _permitTracks.Add(permitTrack);
     public void RemovePermitTrack(PermitTrack permitTrack) => _permitTracks.Remove(permitTrack);

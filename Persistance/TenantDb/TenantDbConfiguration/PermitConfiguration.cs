@@ -1,4 +1,6 @@
-﻿namespace Persistence.TenantDb.TenantDbConfiguration;
+﻿using Domain.VisitorPermits;
+
+namespace Persistence.TenantDb.TenantDbConfiguration;
 
 public class PermitConfiguration : IEntityTypeConfiguration<Permit>
 {
@@ -8,14 +10,14 @@ public class PermitConfiguration : IEntityTypeConfiguration<Permit>
 
         builder.Property(x => x.PermitId)
             .HasConversion(
-                         id => id.Id.ToString(),
-                         value => new PermitId(Guid.Parse(value)))
+                         id => id.Id,
+                         value => new PermitId(value))
                          .IsRequired();
 
 
         builder.HasKey(x => x.PermitId);
 
-        builder.Navigation(p => p.Visitor)
+        builder.Navigation(p => p.Visitors)
                 .AutoInclude();
 
         builder.Navigation(p => p.Building)
@@ -40,14 +42,15 @@ public class PermitConfiguration : IEntityTypeConfiguration<Permit>
 
         builder.Property(x => x.BranchId)
             .HasConversion(
-                         id => id.Guid.ToString(),
-                         value => new BranchId(Guid.Parse(value)))
+                         id => id.Guid,
+                         value => new BranchId(value))
             .IsRequired();
 
         builder.HasOne(p => p.Building)
              .WithMany(b => b.Permits)
             .HasForeignKey(p => p.BuildingId)
             .OnDelete(DeleteBehavior.NoAction);
+
 
         builder.HasOne(b => b.Requester)
             .WithMany(e => e.Permits)
@@ -59,10 +62,22 @@ public class PermitConfiguration : IEntityTypeConfiguration<Permit>
             .HasForeignKey(p => p.HandledBy)
             .OnDelete(DeleteBehavior.NoAction);
 
-        builder.HasOne(p => p.Visitor)
-            .WithMany(v => v.Permits)
-            .HasForeignKey(p => p.VisitorId)
-            .OnDelete(DeleteBehavior.NoAction);
+        builder.HasMany(p => p.Visitors)
+                .WithMany(v => v.Permits)
+                .UsingEntity<VisitorPermit>(
+                    j =>
+                    {
+                        j.HasOne(vp => vp.Visitor)
+                         .WithMany(v => v.VisitorPermits)
+                         .HasForeignKey(vp => vp.VisitorId)
+                         .OnDelete(DeleteBehavior.NoAction);
+
+                        j.HasOne(vp => vp.Permit)
+                         .WithMany(p => p.VisitorPermits)
+                         .HasForeignKey(vp => vp.PermitId)
+                         .OnDelete(DeleteBehavior.NoAction);
+                    });
+
 
         builder.HasMany(p => p.Attachments)
             .WithOne(a => a.Permit)

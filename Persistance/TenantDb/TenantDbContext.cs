@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Domain.VisitorPermits;
+using MediatR;
 using UserConfiguration = Persistence.TenantDb.TenantDbConfiguration.UserConfiguration;
 
 namespace Persistence.TenantDb;
@@ -28,12 +29,15 @@ public class TenantDbContext : DbContext
     public DbSet<Belonging> Belongings { get; set; }
     public DbSet<Car> Cars { get; set; }
     public DbSet<Visitor> Visitors { get; set; }
+    public DbSet<VisitorPermit> VisitorPermits { get; set; }
 
 
 
     public TenantDbContext(DbContextOptions<TenantDbContext> options,
     ITenantService tenantService,
-    IPublisher publisher) : base(options)
+    IPublisher publisher
+    )
+        : base(options)
     {
         _tenantService = tenantService;
         _publisher = publisher;
@@ -69,6 +73,7 @@ public class TenantDbContext : DbContext
         modelBuilder.ApplyConfiguration(new BelongingConfiguration());
         modelBuilder.ApplyConfiguration(new CarConfiguration());
         modelBuilder.ApplyConfiguration(new VisitorConfiguration());
+        modelBuilder.ApplyConfiguration(new VisitorPermitConfiguration());
 
 
         //////////////
@@ -96,6 +101,9 @@ public class TenantDbContext : DbContext
             .HasQueryFilter(b => b.BranchId.Guid.ToString() == _branchId);
 
         modelBuilder.Entity<Visitor>()
+            .HasQueryFilter(v => v.BranchId.Guid.ToString() == _branchId);
+
+        modelBuilder.Entity<VisitorPermit>()
             .HasQueryFilter(v => v.BranchId.Guid.ToString() == _branchId);
 
     }

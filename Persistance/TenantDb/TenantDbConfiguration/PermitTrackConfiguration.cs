@@ -7,11 +7,13 @@ public class PermitTrackConfiguration : IEntityTypeConfiguration<PermitTrack>
         builder.ToTable(nameof(PermitTrack));
         builder.Property(x => x.Id)
             .HasConversion(
-                         id => id.Id.ToString(),
-                         value => new PermitTrackId(Guid.Parse(value)))
+                         id => id.Id,
+                         value => new PermitTrackId(value))
             .IsRequired();
 
         builder.HasKey(x => x.Id);
+
+        builder.HasIndex(x => new { x.PermitId, x.BranchId });
 
         builder.Property(x => x.PermitTrackAction)
             .HasConversion(pta => pta.ToString(),
@@ -27,16 +29,19 @@ public class PermitTrackConfiguration : IEntityTypeConfiguration<PermitTrack>
 
         builder.Property(x => x.BranchId)
             .HasConversion(
-                         id => id.Guid.ToString(),
-                         value => new BranchId(Guid.Parse(value)))
+                         id => id.Guid,
+                         value => new BranchId(value))
             .IsRequired();
 
         builder.Property(x => x.PermitId)
            .HasConversion(
-            id => id.Id.ToString(),
-            value => new PermitId(Guid.Parse(value))
+            id => id.Id,
+            value => new PermitId(value)
             )
            .IsRequired();
+
+        builder.Navigation(x => x.HandledBy)
+            .AutoInclude();
 
 
     }

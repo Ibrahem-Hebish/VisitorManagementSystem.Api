@@ -21,6 +21,6 @@ public partial class BranchMapping
             .ForMember(dest => dest.Id, src => src.MapFrom(x => x.Id.Guid.ToString()))
              .ForMember(dest => dest.Admin, opt => opt.MapFrom(
                                                      src => src.Employees
-                                                               .FirstOrDefault(e => e.Role != null && e.Role.Name == "CompanyAdmin")));
+                                                               .FirstOrDefault(e => e.Role != null && e.Role.Name == "BranchAdmin")));
     }
 }

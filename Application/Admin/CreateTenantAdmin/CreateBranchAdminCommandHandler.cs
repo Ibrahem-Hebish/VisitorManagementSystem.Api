@@ -1,5 +1,4 @@
-﻿using Application.Services.UnitOfWork;
-using Domain.Branches.Repositories;
+﻿using Domain.Branches.Repositories;
 using Domain.Tenants.ObjectValues;
 using Domain.Users.Repositories.Employees;
 
@@ -54,7 +53,7 @@ public class CreateBranchAdminCommandHandler(
 
         var tenantAdmin = new Employee(request.FirstName, request.LastName, request.Email, hashedPassword, request.PhoneNumber);
 
-        var role = await roleQueryRepository.GetRoleByName("CompanyAdmin");
+        var role = await roleQueryRepository.GetRoleByName("BranchAdmin");
 
         if (role is null)
             return InternalServerError<string>();

@@ -8,11 +8,13 @@ public class PermitUpdateRequestConfiguration : IEntityTypeConfiguration<PermitU
         builder.ToTable(nameof(PermitUpdateRequest));
         builder.Property(x => x.Id)
             .HasConversion(
-                         id => id.Id.ToString(),
-                         value => new PermitUpdateRequestId(Guid.Parse(value)))
+                         id => id.Id,
+                         value => new PermitUpdateRequestId(value))
             .IsRequired();
 
         builder.HasKey(x => x.Id);
+
+        builder.HasIndex(x => new { x.PermitId, x.BranchId });
 
         builder.Property(pur => pur.CreatedAt)
             .IsRequired();
@@ -27,14 +29,14 @@ public class PermitUpdateRequestConfiguration : IEntityTypeConfiguration<PermitU
 
         builder.Property(x => x.BranchId)
             .HasConversion(
-                         id => id.Guid.ToString(),
-                         value => new BranchId(Guid.Parse(value)))
+                         id => id.Guid,
+                         value => new BranchId(value))
             .IsRequired();
 
         builder.Property(x => x.PermitId)
            .HasConversion(
-                        id => id.Id.ToString(),
-                        value => new PermitId(Guid.Parse(value)))
+                        id => id.Id,
+                        value => new PermitId(value))
                         .IsRequired();
     }
 }

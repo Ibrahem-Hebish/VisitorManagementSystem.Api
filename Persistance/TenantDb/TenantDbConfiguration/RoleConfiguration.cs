@@ -13,8 +13,8 @@ public class RoleConfiguration : IEntityTypeConfiguration<Role>
 
         builder.Property(x => x.Id)
            .HasConversion(
-                        id => id.Id.ToString(),
-                        value => new RoleId(Guid.Parse(value)))
+                        id => id.Id,
+                        value => new RoleId(value))
                         .IsRequired();
 
         builder.HasKey(x => x.Id);

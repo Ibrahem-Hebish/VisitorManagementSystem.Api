@@ -7,11 +7,17 @@ public class VisitorConfiguration : IEntityTypeConfiguration<Visitor>
         builder.ToTable(nameof(Visitor));
         builder.Property(x => x.VisitorId)
             .HasConversion(
-                         id => id.Id.ToString(),
-                         value => new VisitorId(Guid.Parse(value)))
+                         id => id.Id,
+                         value => new VisitorId(value))
             .IsRequired();
 
         builder.HasKey(x => x.VisitorId);
+
+        builder.HasIndex(x => x.Email)
+            .IsUnique();
+
+        builder.HasIndex(x => x.NationalId)
+            .IsUnique();
 
         builder.Property(v => v.FirstName)
             .HasMaxLength(50)
@@ -39,8 +45,8 @@ public class VisitorConfiguration : IEntityTypeConfiguration<Visitor>
 
         builder.Property(x => x.BranchId)
             .HasConversion(
-                         id => id.Guid.ToString(),
-                         value => new BranchId(Guid.Parse(value)))
+                         id => id.Guid,
+                         value => new BranchId(value))
             .IsRequired();
 
     }

@@ -9,18 +9,15 @@ public class Belonging : Entity, IMultiTenant
     public string Description { get; private set; }
     public BranchId BranchId { get; set; }
     public Branch Branch { get; private set; } = null!;
-    public VisitorId VisitorId { get; private set; }
-    public Visitor Visitor { get; private set; } = null!;
     public PermitId PermitId { get; private set; }
     public Permit Permit { get; private set; } = null!;
 
     private Belonging() { }
-    public Belonging(string name, string description, VisitorId visitorId, PermitId permitId)
+    public Belonging(string name, string description, PermitId permitId)
     {
         Id = new BelongingId(Guid.NewGuid());
         Name = name;
         Description = description;
-        VisitorId = visitorId;
         PermitId = permitId;
     }
 

@@ -2,14 +2,9 @@
 
 namespace Infrustructure.FileService;
 
-public class FileService : IFileService
+public class FileService(IWebHostEnvironment env) : IFileService
 {
-    private readonly string _webRootPath;
-
-    public FileService(IWebHostEnvironment env)
-    {
-        _webRootPath = env.WebRootPath;
-    }
+    private readonly string _webRootPath = env.WebRootPath;
 
     public async Task<string> UploadAsync(IFormFile file, string subDirectory)
     {

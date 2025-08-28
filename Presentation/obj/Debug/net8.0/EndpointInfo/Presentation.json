@@ -509,6 +509,48 @@
             "description": "Success"
           }
         }
+      },
+      "delete": {
+        "tags": [
+          "Permit"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/Permit/{id}/details": {
+      "get": {
+        "tags": [
+          "Permit"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
       }
     },
     "/api/v1/Permit": {
@@ -521,9 +563,238 @@
             "description": "Success"
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Permit"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "StartDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "EndDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "Reason": {
+                    "type": "string"
+                  },
+                  "BuildingId": {
+                    "type": "string"
+                  },
+                  "FloorNumber": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "BelongingDtos": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CreateBelonging"
+                    }
+                  },
+                  "Attachments": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/CreateAttachment"
+                    }
+                  },
+                  "VisitorId": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "StartDate": {
+                  "style": "form"
+                },
+                "EndDate": {
+                  "style": "form"
+                },
+                "Reason": {
+                  "style": "form"
+                },
+                "BuildingId": {
+                  "style": "form"
+                },
+                "FloorNumber": {
+                  "style": "form"
+                },
+                "BelongingDtos": {
+                  "style": "form"
+                },
+                "Attachments": {
+                  "style": "form"
+                },
+                "VisitorId": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
       }
     },
-    "/api/v1/Permit/Requester/{id}": {
+    "/api/v1/Permit/paginate": {
+      "get": {
+        "tags": [
+          "Permit"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaginatePermits"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaginatePermits"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaginatePermits"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/Permit/requester/{requesterId}": {
+      "get": {
+        "tags": [
+          "Permit"
+        ],
+        "parameters": [
+          {
+            "name": "requesterId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/Permit/manager/{managerId}": {
+      "get": {
+        "tags": [
+          "Permit"
+        ],
+        "parameters": [
+          {
+            "name": "managerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/Permit/visitor/{visitorId}": {
+      "get": {
+        "tags": [
+          "Permit"
+        ],
+        "parameters": [
+          {
+            "name": "visitorId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/Permit/latest": {
+      "get": {
+        "tags": [
+          "Permit"
+        ],
+        "parameters": [
+          {
+            "name": "count",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/Permit/searchbydate": {
+      "get": {
+        "tags": [
+          "Permit"
+        ],
+        "parameters": [
+          {
+            "name": "startDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "endDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/Permit/{id}/entrylog": {
       "get": {
         "tags": [
           "Permit"
@@ -545,7 +816,7 @@
         }
       }
     },
-    "/api/v1/Permit/Manager/{id}": {
+    "/api/v1/Permit/{id}/history": {
       "get": {
         "tags": [
           "Permit"
@@ -560,6 +831,81 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/Permit/{id}/approve": {
+      "patch": {
+        "tags": [
+          "Permit"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/Permit/{id}/reject": {
+      "patch": {
+        "tags": [
+          "Permit"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/Permit/extend": {
+      "patch": {
+        "tags": [
+          "Permit"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExtendPermitCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExtendPermitCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExtendPermitCommand"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "Success"
@@ -570,6 +916,43 @@
   },
   "components": {
     "schemas": {
+      "CreateAttachment": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "file": {
+            "type": "string",
+            "format": "binary",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateBelonging": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "plateNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "color": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateBranchAdminCommand": {
         "type": "object",
         "properties": {
@@ -731,6 +1114,46 @@
           }
         },
         "additionalProperties": false
+      },
+      "ExtendPermitCommand": {
+        "type": "object",
+        "properties": {
+          "permitId": {
+            "type": "string",
+            "nullable": true
+          },
+          "newEndDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PaginatePermits": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "cursorDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "direction": {
+            "$ref": "#/components/schemas/PaginationDirection"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PaginationDirection": {
+        "enum": [
+          1,
+          -1
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "PersonGender": {
         "enum": [

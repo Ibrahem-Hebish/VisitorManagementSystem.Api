@@ -24,21 +24,19 @@ namespace Persistence.Migrations.Tenant
 
             modelBuilder.Entity("Domain.Attachments.Attachment", b =>
                 {
-                    b.Property<string>("AttachmentId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("AttachmentId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("BranchId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("FilePath")
                         .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<string>("PermitId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("PermitId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Type")
                         .IsRequired()
@@ -56,12 +54,11 @@ namespace Persistence.Migrations.Tenant
 
             modelBuilder.Entity("Domain.Belongings.Belonging", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("BranchId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -71,21 +68,14 @@ namespace Persistence.Migrations.Tenant
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PermitId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("VisitorId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("PermitId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
                     b.HasIndex("BranchId");
 
                     b.HasIndex("PermitId");
-
-                    b.HasIndex("VisitorId");
 
                     b.ToTable("Belonging", (string)null);
 
@@ -94,8 +84,8 @@ namespace Persistence.Migrations.Tenant
 
             modelBuilder.Entity("Domain.Branches.Branch", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -112,9 +102,8 @@ namespace Persistence.Migrations.Tenant
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
-                    b.Property<string>("TenantId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -125,12 +114,11 @@ namespace Persistence.Migrations.Tenant
 
             modelBuilder.Entity("Domain.Buildings.Building", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("BranchId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("FloorNumbers")
                         .HasColumnType("int");
@@ -149,16 +137,14 @@ namespace Persistence.Migrations.Tenant
 
             modelBuilder.Entity("Domain.EntryLogs.Entrylog", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("AllowedBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("AllowedBy")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("BranchId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("EntryTime")
                         .HasColumnType("datetime2");
@@ -166,13 +152,11 @@ namespace Persistence.Migrations.Tenant
                     b.Property<bool>("IsInside")
                         .HasColumnType("bit");
 
-                    b.Property<string>("PermitId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("PermitId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("VisitorId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("VisitorId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -185,17 +169,18 @@ namespace Persistence.Migrations.Tenant
 
                     b.HasIndex("VisitorId");
 
+                    b.HasIndex("PermitId", "BranchId");
+
                     b.ToTable("Entrylog", (string)null);
                 });
 
             modelBuilder.Entity("Domain.PermitTracks.PermitTrack", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("BranchId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -205,13 +190,11 @@ namespace Persistence.Migrations.Tenant
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<string>("EmployeeId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("EmployeeId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("PermitId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("PermitId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("PermitTrackAction")
                         .IsRequired()
@@ -223,19 +206,18 @@ namespace Persistence.Migrations.Tenant
 
                     b.HasIndex("EmployeeId");
 
-                    b.HasIndex("PermitId");
+                    b.HasIndex("PermitId", "BranchId");
 
                     b.ToTable("PermitTrack", (string)null);
                 });
 
             modelBuilder.Entity("Domain.PermitUpdateRequests.PermitUpdateRequest", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("BranchId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -245,40 +227,36 @@ namespace Persistence.Migrations.Tenant
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<string>("PermitId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("PermitId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("PermitUpdateAction")
                         .HasColumnType("int");
 
-                    b.Property<string>("RequesterId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("RequesterId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
                     b.HasIndex("BranchId");
 
-                    b.HasIndex("PermitId");
-
                     b.HasIndex("RequesterId");
+
+                    b.HasIndex("PermitId", "BranchId");
 
                     b.ToTable("PermitUpdateRequest", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Permits.Permit", b =>
                 {
-                    b.Property<string>("PermitId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("PermitId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("BranchId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("BuildingId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("BuildingId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -289,17 +267,16 @@ namespace Persistence.Migrations.Tenant
                     b.Property<int>("FloorNumber")
                         .HasColumnType("int");
 
-                    b.Property<string>("HandledBy")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid?>("HandledBy")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Reason")
                         .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<string>("RequestedBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("RequestedBy")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
@@ -309,10 +286,6 @@ namespace Persistence.Migrations.Tenant
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("VisitorId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("PermitId");
 
@@ -326,15 +299,13 @@ namespace Persistence.Migrations.Tenant
 
                     b.HasIndex("Status");
 
-                    b.HasIndex("VisitorId");
-
                     b.ToTable("Permit", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Roles.Role", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -348,8 +319,8 @@ namespace Persistence.Migrations.Tenant
 
             modelBuilder.Entity("Domain.Tenants.Tenant", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ConnectionString")
                         .IsRequired()
@@ -367,8 +338,8 @@ namespace Persistence.Migrations.Tenant
 
             modelBuilder.Entity("Domain.Tokens.UserToken", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("AccessToken")
                         .IsRequired()
@@ -387,9 +358,8 @@ namespace Persistence.Migrations.Tenant
                     b.Property<DateTime>("RefreshTokenExpiredDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -400,8 +370,8 @@ namespace Persistence.Migrations.Tenant
 
             modelBuilder.Entity("Domain.Users.User", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -431,11 +401,13 @@ namespace Persistence.Migrations.Tenant
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
-                    b.Property<string>("RoleId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
 
                     b.HasIndex("RoleId");
 
@@ -444,14 +416,33 @@ namespace Persistence.Migrations.Tenant
                     b.UseTptMappingStrategy();
                 });
 
+            modelBuilder.Entity("Domain.VisitorPermits.VisitorPermit", b =>
+                {
+                    b.Property<Guid>("PermitId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("VisitorId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("PermitId", "VisitorId");
+
+                    b.HasIndex("BranchId");
+
+                    b.HasIndex("VisitorId");
+
+                    b.ToTable("VisitorPermit", (string)null);
+                });
+
             modelBuilder.Entity("Domain.Visitors.Visitor", b =>
                 {
-                    b.Property<string>("VisitorId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("VisitorId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("BranchId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -485,6 +476,12 @@ namespace Persistence.Migrations.Tenant
 
                     b.HasIndex("BranchId");
 
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.HasIndex("NationalId")
+                        .IsUnique();
+
                     b.ToTable("Visitor", (string)null);
                 });
 
@@ -509,12 +506,11 @@ namespace Persistence.Migrations.Tenant
                 {
                     b.HasBaseType("Domain.Users.User");
 
-                    b.Property<string>("BranchId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("BranchId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("ManagerId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid?>("ManagerId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Position")
                         .HasColumnType("int");
@@ -580,17 +576,9 @@ namespace Persistence.Migrations.Tenant
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("Domain.Visitors.Visitor", "Visitor")
-                        .WithMany("Belongings")
-                        .HasForeignKey("VisitorId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
                     b.Navigation("Branch");
 
                     b.Navigation("Permit");
-
-                    b.Navigation("Visitor");
                 });
 
             modelBuilder.Entity("Domain.Branches.Branch", b =>
@@ -603,8 +591,8 @@ namespace Persistence.Migrations.Tenant
 
                     b.OwnsOne("Domain.Branches.ObjectValues.BranchAddress", "Address", b1 =>
                         {
-                            b1.Property<string>("BranchId")
-                                .HasColumnType("nvarchar(450)");
+                            b1.Property<Guid>("BranchId")
+                                .HasColumnType("uniqueidentifier");
 
                             b1.Property<string>("City")
                                 .IsRequired()
@@ -663,7 +651,7 @@ namespace Persistence.Migrations.Tenant
                     b.HasOne("Domain.Permits.Permit", "Permit")
                         .WithOne()
                         .HasForeignKey("Domain.EntryLogs.Entrylog", "PermitId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("Domain.Visitors.Visitor", "Visitor")
@@ -760,12 +748,6 @@ namespace Persistence.Migrations.Tenant
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("Domain.Visitors.Visitor", "Visitor")
-                        .WithMany("Permits")
-                        .HasForeignKey("VisitorId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
                     b.Navigation("Branch");
 
                     b.Navigation("Building");
@@ -773,8 +755,6 @@ namespace Persistence.Migrations.Tenant
                     b.Navigation("Handler");
 
                     b.Navigation("Requester");
-
-                    b.Navigation("Visitor");
                 });
 
             modelBuilder.Entity("Domain.Tokens.UserToken", b =>
@@ -797,6 +777,33 @@ namespace Persistence.Migrations.Tenant
                         .IsRequired();
 
                     b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("Domain.VisitorPermits.VisitorPermit", b =>
+                {
+                    b.HasOne("Domain.Branches.Branch", "Branch")
+                        .WithMany("VisitorPermits")
+                        .HasForeignKey("BranchId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Permits.Permit", "Permit")
+                        .WithMany("VisitorPermits")
+                        .HasForeignKey("PermitId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Visitors.Visitor", "Visitor")
+                        .WithMany("VisitorPermits")
+                        .HasForeignKey("VisitorId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Branch");
+
+                    b.Navigation("Permit");
+
+                    b.Navigation("Visitor");
                 });
 
             modelBuilder.Entity("Domain.Visitors.Visitor", b =>
@@ -888,6 +895,8 @@ namespace Persistence.Migrations.Tenant
 
                     b.Navigation("Permits");
 
+                    b.Navigation("VisitorPermits");
+
                     b.Navigation("Visitors");
                 });
 
@@ -905,6 +914,8 @@ namespace Persistence.Migrations.Tenant
                     b.Navigation("PermitTracks");
 
                     b.Navigation("PermitUpdateRequest");
+
+                    b.Navigation("VisitorPermits");
                 });
 
             modelBuilder.Entity("Domain.Roles.Role", b =>
@@ -924,9 +935,7 @@ namespace Persistence.Migrations.Tenant
 
             modelBuilder.Entity("Domain.Visitors.Visitor", b =>
                 {
-                    b.Navigation("Belongings");
-
-                    b.Navigation("Permits");
+                    b.Navigation("VisitorPermits");
                 });
 
             modelBuilder.Entity("Domain.Users.Employee", b =>

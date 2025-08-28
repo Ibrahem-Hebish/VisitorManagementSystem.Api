@@ -12,7 +12,7 @@ public class PermitQueryRepository(TenantDbContext dbContext) : IPermitQueryRepo
 
     public async Task<Permit?> GetByIdAsync(PermitId id, CancellationToken cancellationToken = default)
     {
-        var permit = await dbContext.Permits.FirstOrDefaultAsync(p => p.PermitId == id, cancellationToken: cancellationToken);
+        var permit = await dbContext.Permits.FindAsync(id);
 
         return permit;
     }
@@ -41,13 +41,40 @@ public class PermitQueryRepository(TenantDbContext dbContext) : IPermitQueryRepo
                                        .ToListAsync(cancellationToken: cancellationToken);
     }
 
-    public async Task<IReadOnlyList<Permit>> GetPagedAsync(int pageNumber, int pageSize = 10, CancellationToken cancellationToken = default)
+    public async Task<IReadOnlyList<Permit>> GetPagedAsync(PermitId? id, DateTime? cursorDate, PaginationDirection direction, CancellationToken cancellationToken = default)
     {
-        return await dbContext.Permits.OrderByDescending(p => p.StartDate)
-                                       .Skip((pageNumber - 1) * pageSize)
-                                       .Take(pageSize)
-                                       .AsNoTracking()
-                                       .ToListAsync(cancellationToken: cancellationToken);
+        var query = dbContext.Permits.AsQueryable();
+
+        if (direction == PaginationDirection.Forward)
+        {
+            query = query
+                .OrderByDescending(p => p.StartDate).ThenByDescending(p => p.PermitId);
+
+            if (cursorDate.HasValue && id is not null)
+                query = query
+                    .Where(p => p.StartDate < cursorDate ||
+                               (p.StartDate == cursorDate && p.PermitId.Id.CompareTo(id.Id) < 0));
+        }
+        else
+        {
+            query = query
+                .OrderBy(p => p.StartDate).ThenBy(p => p.PermitId);
+
+            if (cursorDate.HasValue && id is not null)
+                query = query
+                    .Where(p => p.StartDate > cursorDate ||
+                                (p.StartDate == cursorDate && p.PermitId.Id.CompareTo(id.Id) > 0));
+        }
+
+        var result = await query
+            .Take(10)
+            .ToListAsync(cancellationToken);
+
+        if (direction == PaginationDirection.Backward)
+            result.Reverse();
+
+        return result;
+
     }
 
     public async Task<IReadOnlyList<Permit>> GetPermitsCreatedByRequester(UserId id, CancellationToken cancellationToken = default)
@@ -69,13 +96,6 @@ public class PermitQueryRepository(TenantDbContext dbContext) : IPermitQueryRepo
         return await dbContext.PermitTracks.Where(pt => pt.PermitId == id)
                                             .AsNoTracking()
                                              .ToListAsync(cancellationToken: cancellationToken);
-    }
-
-    public async Task<IReadOnlyList<Permit>> GetVisitorPermitsAsync(VisitorId visitorId, CancellationToken cancellationToken = default)
-    {
-        return await dbContext.Permits.Where(p => p.VisitorId == visitorId)
-                                       .AsNoTracking()
-                                        .ToListAsync(cancellationToken: cancellationToken);
     }
 
     public async Task<IReadOnlyList<Permit>> SearchByDateAsync(DateTime startDate, DateTime endDate, CancellationToken cancellationToken = default)

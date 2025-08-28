@@ -172,3 +172,4 @@ C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance.Test\b
 C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance.Test\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance.Test\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance.Test\obj\Debug\net8.0\Persiste.488BDD6C.Up2Date
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance.Test\obj\Debug\net8.0\Persistence.Test.sourcelink.json

@@ -7,11 +7,14 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
         builder.ToTable(nameof(User));
         builder.Property(x => x.Id)
             .HasConversion(
-                         id => id.Id.ToString(),
-                         value => new UserId(Guid.Parse(value)))
+                         id => id.Id,
+                         value => new UserId(value))
             .IsRequired();
 
         builder.HasKey(x => x.Id);
+
+        builder.HasIndex(x => x.Email)
+            .IsUnique();
 
         builder.Property(x => x.FirstName)
             .HasMaxLength(50)

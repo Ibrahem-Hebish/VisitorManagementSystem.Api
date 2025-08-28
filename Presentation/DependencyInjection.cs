@@ -1,6 +1,10 @@
 ﻿using Application.Services.UnitOfWork;
+using Domain.Buildings.Repositories;
 using Domain.Permits.Repositories;
+using Domain.Visitors.Repositories;
+using Persistence.TenantDb.Repositories.Buildings;
 using Persistence.TenantDb.Repositories.Permits;
+using Persistence.TenantDb.Repositories.Visitors;
 
 namespace Presentation;
 
@@ -63,6 +67,10 @@ public static class DependencyInjection
 
         services.AddScoped<IPermitQueryRepository, PermitQueryRepository>();
         services.AddScoped<IPermitCommandRepository, PermitCommandRepository>();
+
+        services.AddScoped<IBuildingQueryRepository, BuildingQueryRepository>();
+
+        services.AddScoped<IVisitorQueryRepository, VisitorQueryRepository>();
 
         // Shared
         services.AddScoped<ISharedTenantCommandRepository, SharedTenantCommandRepository>();

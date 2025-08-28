@@ -9,33 +9,41 @@ public class EntryLogConfiguration : IEntityTypeConfiguration<Entrylog>
         builder.ToTable(nameof(Entrylog));
         builder.Property(x => x.Id)
             .HasConversion(
-                         id => id.Id.ToString(),
-                         value => new EntrylogId(Guid.Parse(value)))
+                         id => id.Id,
+                         value => new EntrylogId(value))
             .IsRequired();
 
         builder.HasKey(x => x.Id);
 
+        builder.HasIndex(x => new { x.PermitId, x.BranchId });
+
         builder.Property(x => x.EntryTime)
             .IsRequired();
+
+        builder.Navigation(x => x.Employee)
+            .AutoInclude();
+
+        builder.Navigation(x => x.Visitor)
+            .AutoInclude();
 
         builder.Property(x => x.IsInside)
             .IsRequired();
 
         builder.Property(x => x.BranchId)
             .HasConversion(
-                         id => id.Guid.ToString(),
-                         value => new BranchId(Guid.Parse(value)))
+                         id => id.Guid,
+                         value => new BranchId(value))
             .IsRequired();
 
         builder.Property(x => x.VisitorId)
            .HasConversion(
-                        id => id.Id.ToString(),
-                        value => new VisitorId(Guid.Parse(value)));
+                        id => id.Id,
+                        value => new VisitorId(value));
 
         builder.Property(x => x.AllowedBy)
            .HasConversion(
-                        id => id.Id.ToString(),
-                        value => new UserId(Guid.Parse(value)));
+                        id => id.Id,
+                        value => new UserId(value));
 
         builder.HasOne(x => x.Visitor)
             .WithMany()
@@ -44,6 +52,7 @@ public class EntryLogConfiguration : IEntityTypeConfiguration<Entrylog>
 
         builder.HasOne(x => x.Permit)
                 .WithOne()
-                .HasForeignKey<Entrylog>(x => x.PermitId);
+                .HasForeignKey<Entrylog>(x => x.PermitId)
+                .OnDelete(DeleteBehavior.NoAction);
     }
 }

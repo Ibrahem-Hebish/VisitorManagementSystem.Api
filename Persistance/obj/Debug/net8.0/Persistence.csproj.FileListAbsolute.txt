@@ -16,3 +16,4 @@ C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\De
 C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\Debug\net8.0\ref\Persistence.dll
 C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\bin\Debug\net8.0\appsetting.json
 C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\Debug\net8.0\Persiste.61C28332.Up2Date
+C:\Users\Super magic\OneDrive\Desktop\VisitorManagementSystem\Persistance\obj\Debug\net8.0\Persistence.sourcelink.json

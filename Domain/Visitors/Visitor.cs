@@ -1,4 +1,5 @@
 ﻿using Domain.Users.Enums;
+using Domain.VisitorPermits;
 
 namespace Domain.Visitors;
 
@@ -17,8 +18,8 @@ public class Visitor
     public Branch Branch { get; private set; } = null!;
     private readonly List<Permit> _permits = [];
     public IReadOnlyCollection<Permit> Permits => _permits.AsReadOnly();
-    private readonly List<Belonging> _belongings = [];
-    public IReadOnlyCollection<Belonging> Belongings => _belongings.AsReadOnly();
+    private readonly List<VisitorPermit> _vistorPermits = [];
+    public IReadOnlyCollection<VisitorPermit> VisitorPermits => _vistorPermits.AsReadOnly();
 
     private Visitor() { }
     private Visitor(string firstName, string lastName, string email,
