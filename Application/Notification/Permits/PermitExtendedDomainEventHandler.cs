@@ -1,5 +1,5 @@
 ﻿using Application.Services.Email;
-using Domain.Permits.DomainEvents;
+using Domain.TenantDomain.Permits.DomainEvents;
 
 namespace Application.Notification.Permits;
 
@@ -8,8 +8,13 @@ public sealed class PermitExtendedDomainEventHandler(
     )
     : INotificationHandler<PermitExtendedDomainEvent>
 {
-    public Task Handle(PermitExtendedDomainEvent notification, CancellationToken cancellationToken)
+    public async Task Handle(PermitExtendedDomainEvent notification, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        foreach (var email in notification.Emails)
+        {
+            var emailContent = new EmailContent(email, $"your permit with id {notification.PermitId} is extenended to {notification.EndDate}", "Permit status");
+
+            await emailService.SendEmail(emailContent);
+        }
     }
 }

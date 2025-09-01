@@ -1,12 +1,11 @@
-﻿using Domain.PermitTracks.Enums;
+﻿using Domain.TenantDomain.PermitTracks.Enums;
 
 namespace Application.Dtos.PermitTracks;
 
-public record PermitTrackDto
-{
-    public string Id { get; set; }
-    public PermitTrackAction PermitTrackAction { get; set; }
-    public DateTime CreatedAt { get; set; }
-    public string Description { get; set; }
-    public string EmpolyeeName { get; set; }
-}
+public record PermitTrackDto(
+    string Id,
+    PermitTrackAction PermitTrackAction,
+    DateTime CreatedAt,
+    string Description,
+    string EmpolyeeName
+    );

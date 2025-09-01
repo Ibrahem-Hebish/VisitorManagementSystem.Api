@@ -1,5 +1,5 @@
-﻿using Domain.SharedTenantMetadataEntities.Branches.ObjectValues;
-using Domain.Tokens.DomainEvents;
+﻿using Domain.CatalogDb.Branches.ObjectValues;
+using Domain.TenantDomain.Tokens.DomainEvents;
 
 namespace Application.Notification.UserTokens;
 

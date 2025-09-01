@@ -1,5 +1,8 @@
-﻿using Domain.Users.Repositories.Employees;
-using Domain.Users.Repositories.Users;
+﻿using Domain.TenantDomain.Branches.Repositories;
+using Domain.TenantDomain.Roles.Enums;
+using Domain.TenantDomain.Users;
+using Domain.TenantDomain.Users.Repositories.Employees;
+using Domain.TenantDomain.Users.Repositories.Users;
 
 namespace Infrustructure.Authentication;
 
@@ -32,7 +35,7 @@ public class AuthenticationService(
             AccessTokenExpiredDate = DateTime.UtcNow.AddMinutes(jwtOptions.CurrentValue!.LifeTime),
             RefreshTokenExpiredDate = refreshTokenExpiredDate,
             IsActive = true,
-            UserId = user.Id.Id.ToString(),
+            UserId = user.Id.Value.ToString(),
             Role = (await userQueryRepository.GetUserRole(user.Id))!.Name
         };
 
@@ -111,7 +114,7 @@ public class AuthenticationService(
 
         List<Claim> userClaims = [];
 
-        if (role!.Name != "Admin")
+        if (role!.Name != Roles.Admin.ToString())
         {
             var employee = await employeeQueryRepository.GetByIdAsync(user.Id) ??
                                    throw new InvalidOperationException("Employee not found for the user.");
@@ -119,13 +122,13 @@ public class AuthenticationService(
             var branch = await branchQueryRepository.GetByIdAsync(employee.BranchId) ??
                                     throw new InvalidOperationException("Branch not found for the employee.");
 
-            userClaims.Add(new("BranchId", employee.BranchId.Guid.ToString()));
+            userClaims.Add(new("BranchId", employee.BranchId.Value.ToString()));
 
-            userClaims.Add(new("TenantId", branch.TenantId.Guid.ToString()));
+            userClaims.Add(new("TenantId", branch.TenantId.Value.ToString()));
 
         }
 
-        userClaims.Add(new(ClaimTypes.NameIdentifier, user.Id.Id.ToString()));
+        userClaims.Add(new(ClaimTypes.NameIdentifier, user.Id.Value.ToString()));
 
         userClaims.Add(new Claim(ClaimTypes.Role, role.Name));
 

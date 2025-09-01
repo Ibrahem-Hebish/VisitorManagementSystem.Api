@@ -11,9 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="PermitTracks\ObjectValues\" />
-    <Folder Include="PermitTracks\Repositories\" />
-    <Folder Include="PermitUpdateRequests\Repositories\" />
+    <Folder Include="TenantDomain\PermitTracks\Repositories\" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UIS8axk8w+Q=",
+  "dgSpecHash": "dhJ9WWz17F8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -75,6 +75,7 @@
     "C:\\Users\\Super magic\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512",
     "C:\\Users\\Super magic\\.nuget\\packages\\mimekit\\4.13.0\\mimekit.4.13.0.nupkg.sha512",
     "C:\\Users\\Super magic\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\Super magic\\.nuget\\packages\\questpdf\\2025.7.1\\questpdf.2025.7.1.nupkg.sha512",
     "C:\\Users\\Super magic\\.nuget\\packages\\serilog\\4.2.0\\serilog.4.2.0.nupkg.sha512",
     "C:\\Users\\Super magic\\.nuget\\packages\\serilog.aspnetcore\\9.0.0\\serilog.aspnetcore.9.0.0.nupkg.sha512",
     "C:\\Users\\Super magic\\.nuget\\packages\\serilog.extensions.hosting\\9.0.0\\serilog.extensions.hosting.9.0.0.nupkg.sha512",

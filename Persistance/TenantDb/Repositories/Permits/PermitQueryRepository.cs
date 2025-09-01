@@ -1,4 +1,9 @@
-﻿using Domain.Permits.Repositories;
+﻿using Domain.TenantDomain.EntryLogs;
+using Domain.TenantDomain.Permits;
+using Domain.TenantDomain.Permits.ObjectValues;
+using Domain.TenantDomain.Permits.Repositories;
+using Domain.TenantDomain.PermitTracks;
+using Domain.TenantDomain.Users.ObjectValues;
 
 namespace Persistence.TenantDb.Repositories.Permits;
 
@@ -53,7 +58,7 @@ public class PermitQueryRepository(TenantDbContext dbContext) : IPermitQueryRepo
             if (cursorDate.HasValue && id is not null)
                 query = query
                     .Where(p => p.StartDate < cursorDate ||
-                               (p.StartDate == cursorDate && p.PermitId.Id.CompareTo(id.Id) < 0));
+                               (p.StartDate == cursorDate && p.PermitId.Value.CompareTo(id.Value) < 0));
         }
         else
         {
@@ -63,7 +68,7 @@ public class PermitQueryRepository(TenantDbContext dbContext) : IPermitQueryRepo
             if (cursorDate.HasValue && id is not null)
                 query = query
                     .Where(p => p.StartDate > cursorDate ||
-                                (p.StartDate == cursorDate && p.PermitId.Id.CompareTo(id.Id) > 0));
+                                (p.StartDate == cursorDate && p.PermitId.Value.CompareTo(id.Value) > 0));
         }
 
         var result = await query

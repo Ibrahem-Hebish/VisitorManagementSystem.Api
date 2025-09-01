@@ -1,6 +1,6 @@
 ﻿using Application.Dtos.UserToken;
 using AutoMapper;
-using Domain.Tokens;
+using Domain.TenantDomain.Tokens;
 
 namespace Application.UserTokens.Mapping;
 

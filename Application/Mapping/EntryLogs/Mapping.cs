@@ -1,5 +1,5 @@
 ﻿using Application.Dtos.EntryLogs;
-using Domain.EntryLogs;
+using Domain.TenantDomain.EntryLogs;
 
 namespace Application.Mapping.EntryLogs;
 
@@ -16,8 +16,7 @@ public partial class Mapping
     public void MapEntryLogDto()
     {
         CreateMap<Entrylog, EntryLogDto>()
-            .ForMember(dest => dest.Id, src => src.MapFrom(pt => pt.Id.Id.ToString()))
-            .ForMember(dest => dest.SecurityName, src => src.MapFrom(el => el.Employee.FirstName + " " + el.Employee.LastName))
-            .ForMember(dest => dest.VisitorName, src => src.MapFrom(el => el.Visitor.FirstName + " " + el.Visitor.LastName));
+            .ForMember(dest => dest.Id, src => src.MapFrom(pt => pt.Id.Value.ToString()))
+            .ForMember(dest => dest.SecurityName, src => src.MapFrom(el => el.Employee.FirstName + " " + el.Employee.LastName));
     }
 }

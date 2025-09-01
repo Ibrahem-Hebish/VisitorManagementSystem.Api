@@ -1,5 +1,5 @@
 ﻿using Application.Users.Dtos;
-using Domain.Branches.ObjectValues;
+using Domain.TenantDomain.Branches.ObjectValues;
 
 namespace Application.Dtos.Branch;
 

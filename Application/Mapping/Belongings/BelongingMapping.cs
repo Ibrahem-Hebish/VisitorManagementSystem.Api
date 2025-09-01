@@ -1,5 +1,5 @@
 ﻿using Application.Dtos.Belongings;
-using Domain.Belongings;
+using Domain.TenantDomain.Belongings;
 
 namespace Application.Mapping.Belongings;
 
@@ -16,7 +16,7 @@ public partial class BelongingMapping
     public void MapBelongingDto()
     {
         CreateMap<Belonging, BelongingDto>()
-            .ForMember(dest => dest.Id, opt => opt.MapFrom(b => b.Id.Id.ToString()))
+            .ForMember(dest => dest.Id, opt => opt.MapFrom(b => b.Id.Value.ToString()))
             .ForMember(dest => dest.PlateNumber, opt =>
             {
                 opt.Condition(src => src is Car);

@@ -1,5 +1,5 @@
-﻿using Domain.Permits.Repositories;
-using Microsoft.Data.SqlClient;
+﻿using Domain.TenantDomain.Permits;
+using Domain.TenantDomain.Permits.Repositories;
 
 namespace Persistence.TenantDb.Repositories.Permits;
 

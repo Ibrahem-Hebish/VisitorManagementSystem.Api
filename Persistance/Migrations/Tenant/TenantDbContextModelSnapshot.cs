@@ -92,6 +92,9 @@ namespace Persistence.Migrations.Tenant
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<Guid?>("ManagerId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -106,6 +109,10 @@ namespace Persistence.Migrations.Tenant
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ManagerId")
+                        .IsUnique()
+                        .HasFilter("[ManagerId] IS NOT NULL");
 
                     b.HasIndex("TenantId");
 
@@ -155,9 +162,6 @@ namespace Persistence.Migrations.Tenant
                     b.Property<Guid>("PermitId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("VisitorId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
                     b.HasIndex("AllowedBy");
@@ -166,8 +170,6 @@ namespace Persistence.Migrations.Tenant
 
                     b.HasIndex("PermitId")
                         .IsUnique();
-
-                    b.HasIndex("VisitorId");
 
                     b.HasIndex("PermitId", "BranchId");
 
@@ -255,7 +257,7 @@ namespace Persistence.Migrations.Tenant
                     b.Property<Guid>("BranchId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("BuildingId")
+                    b.Property<Guid?>("BuildingId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedAt")
@@ -264,7 +266,7 @@ namespace Persistence.Migrations.Tenant
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("FloorNumber")
+                    b.Property<int?>("FloorNumber")
                         .HasColumnType("int");
 
                     b.Property<Guid?>("HandledBy")
@@ -326,12 +328,19 @@ namespace Persistence.Migrations.Tenant
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid?>("ManagerId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ManagerId")
+                        .IsUnique()
+                        .HasFilter("[ManagerId] IS NOT NULL");
 
                     b.ToTable("Tenant", (string)null);
                 });
@@ -438,7 +447,7 @@ namespace Persistence.Migrations.Tenant
 
             modelBuilder.Entity("Domain.Visitors.Visitor", b =>
                 {
-                    b.Property<Guid>("VisitorId")
+                    b.Property<Guid>("Id")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("BranchId")
@@ -472,14 +481,14 @@ namespace Persistence.Migrations.Tenant
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
-                    b.HasKey("VisitorId");
+                    b.HasKey("Id");
 
                     b.HasIndex("BranchId");
 
-                    b.HasIndex("Email")
+                    b.HasIndex("NationalId")
                         .IsUnique();
 
-                    b.HasIndex("NationalId")
+                    b.HasIndex("Email", "BranchId")
                         .IsUnique();
 
                     b.ToTable("Visitor", (string)null);
@@ -583,6 +592,11 @@ namespace Persistence.Migrations.Tenant
 
             modelBuilder.Entity("Domain.Branches.Branch", b =>
                 {
+                    b.HasOne("Domain.Users.Employee", "Manager")
+                        .WithOne()
+                        .HasForeignKey("Domain.Branches.Branch", "ManagerId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
                     b.HasOne("Domain.Tenants.Tenant", "Tenant")
                         .WithMany("Branches")
                         .HasForeignKey("TenantId")
@@ -620,6 +634,8 @@ namespace Persistence.Migrations.Tenant
                     b.Navigation("Address")
                         .IsRequired();
 
+                    b.Navigation("Manager");
+
                     b.Navigation("Tenant");
                 });
 
@@ -654,19 +670,11 @@ namespace Persistence.Migrations.Tenant
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.HasOne("Domain.Visitors.Visitor", "Visitor")
-                        .WithMany()
-                        .HasForeignKey("VisitorId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
                     b.Navigation("Branch");
 
                     b.Navigation("Employee");
 
                     b.Navigation("Permit");
-
-                    b.Navigation("Visitor");
                 });
 
             modelBuilder.Entity("Domain.PermitTracks.PermitTrack", b =>
@@ -734,8 +742,7 @@ namespace Persistence.Migrations.Tenant
                     b.HasOne("Domain.Buildings.Building", "Building")
                         .WithMany("Permits")
                         .HasForeignKey("BuildingId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.HasOne("Domain.Users.Manager", "Handler")
                         .WithMany("Permits")
@@ -755,6 +762,16 @@ namespace Persistence.Migrations.Tenant
                     b.Navigation("Handler");
 
                     b.Navigation("Requester");
+                });
+
+            modelBuilder.Entity("Domain.Tenants.Tenant", b =>
+                {
+                    b.HasOne("Domain.Users.Employee", "Manager")
+                        .WithOne()
+                        .HasForeignKey("Domain.Tenants.Tenant", "ManagerId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.Navigation("Manager");
                 });
 
             modelBuilder.Entity("Domain.Tokens.UserToken", b =>

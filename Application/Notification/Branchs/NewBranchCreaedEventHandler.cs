@@ -1,8 +1,7 @@
-﻿using Domain.Branches.DomainEvents;
-using Domain.SharedTenantMetadataEntities.Branches;
-using Domain.SharedTenantMetadataEntities.Branches.ObjectValues;
-using Domain.SharedTenantMetadataEntities.Tenants.ObjectValues;
-using Domain.Tenants.Repositories;
+﻿using Domain.CatalogDb.Branches;
+using Domain.CatalogDb.Branches.ObjectValues;
+using Domain.CatalogDb.Tenants.ObjectValues;
+using Domain.TenantDomain.Branches.DomainEvents;
 
 namespace Application.Notification.Branchs;
 
@@ -34,7 +33,7 @@ public class NewBranchCreaedEventHandler(
         if (tenant is null)
             throw new ArgumentNullException(nameof(tenant), "Tenant not found.");
 
-        sharedBranch.SetTenant(tenant);
+        sharedBranch.SetTenant(tenant.Id);
 
         await sharedBranchCommandRepository.AddAsync(sharedBranch, cancellationToken);
 

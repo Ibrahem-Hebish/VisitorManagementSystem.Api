@@ -1,4 +1,7 @@
 ﻿
+using Domain.TenantDomain.Branches;
+using Domain.TenantDomain.Branches.Repositories;
+
 namespace Persistence.TenantDb.Repositories.Branchs;
 
 public class BranchCommandRepository(

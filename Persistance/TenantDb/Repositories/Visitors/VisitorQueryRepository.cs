@@ -1,4 +1,8 @@
-﻿using Domain.Visitors.Repositories;
+﻿using Domain.TenantDomain.Branches.ObjectValues;
+using Domain.TenantDomain.Permits;
+using Domain.TenantDomain.Visitors;
+using Domain.TenantDomain.Visitors.ObjectValues;
+using Domain.TenantDomain.Visitors.Repositories;
 
 namespace Persistence.TenantDb.Repositories.Visitors;
 
@@ -6,12 +10,12 @@ public class VisitorQueryRepository(TenantDbContext dbContext) : IVisitorQueryRe
 {
     public async Task<bool> ExsistsAsync(VisitorId visitorId)
     {
-        return await dbContext.Visitors.AnyAsync(v => v.VisitorId == visitorId);
+        return await dbContext.Visitors.AnyAsync(v => v.Id == visitorId);
     }
 
-    public Task<List<Visitor>> GetAllAsync()
+    public async Task<List<Visitor>> GetAllAsync(CancellationToken cancellationToken = default)
     {
-        throw new NotImplementedException();
+        return await dbContext.Visitors.ToListAsync(cancellationToken: cancellationToken);
     }
 
     public Task<IEnumerable<Visitor>> GetByBranchIdAsync(BranchId branchId)
@@ -19,9 +23,9 @@ public class VisitorQueryRepository(TenantDbContext dbContext) : IVisitorQueryRe
         throw new NotImplementedException();
     }
 
-    public Task<Visitor?> GetByIdAsync(VisitorId visitorId)
+    public async Task<Visitor?> GetByIdAsync(VisitorId visitorId)
     {
-        throw new NotImplementedException();
+        return await dbContext.Visitors.FindAsync(visitorId);
     }
 
     public async Task<List<Permit>> GetVisitorPermits(VisitorId visitorId)
@@ -41,8 +45,20 @@ public class VisitorQueryRepository(TenantDbContext dbContext) : IVisitorQueryRe
 
     }
 
+    public async Task<List<Visitor>> GetExsistingVisitors(List<string> emails, CancellationToken cancellationToken = default)
+    {
+        return await dbContext.Visitors
+                  .Where(v => emails.Contains(v.Email))
+                  .ToListAsync(cancellationToken);
+    }
+
     public Task<List<Permit>> GetVisitorPermitsAsync(VisitorId visitorId)
     {
         throw new NotImplementedException();
+    }
+
+    public async Task<Visitor?> GetByEmailAsync(string email)
+    {
+        return await dbContext.Visitors.FirstOrDefaultAsync(x => x.Email == email);
     }
 }

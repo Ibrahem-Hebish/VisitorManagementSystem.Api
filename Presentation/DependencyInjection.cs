@@ -1,10 +1,17 @@
-﻿using Application.Services.UnitOfWork;
-using Domain.Buildings.Repositories;
-using Domain.Permits.Repositories;
-using Domain.Visitors.Repositories;
-using Persistence.TenantDb.Repositories.Buildings;
-using Persistence.TenantDb.Repositories.Permits;
-using Persistence.TenantDb.Repositories.Visitors;
+﻿using Domain.TenantDomain.Branches.Repositories;
+using Domain.TenantDomain.Buildings.Repositories;
+using Domain.TenantDomain.EntryLogs.Repositories;
+using Domain.TenantDomain.Permits.Repositories;
+using Domain.TenantDomain.PermitUpdateRequests.Repositories;
+using Domain.TenantDomain.Roles.Repositories;
+using Domain.TenantDomain.Tenants.Repositories;
+using Domain.TenantDomain.Tokens.Repositories;
+using Domain.TenantDomain.Users.Repositories.Employees;
+using Domain.TenantDomain.Users.Repositories.Managers;
+using Domain.TenantDomain.Users.Repositories.Requesters;
+using Domain.TenantDomain.Users.Repositories.Securities;
+using Domain.TenantDomain.Users.Repositories.Users;
+using Domain.TenantDomain.Visitors.Repositories;
 
 namespace Presentation;
 
@@ -16,6 +23,8 @@ public static class DependencyInjection
         {
             opt.Filters.Add<TenantFilter>();
         });
+
+        QuestPDF.Settings.License = QuestPDF.Infrastructure.LicenseType.Community;
 
         services.AddScoped<ExeptionHandlerMiddleware>();
 
@@ -30,6 +39,8 @@ public static class DependencyInjection
         });
 
         services.AddTransient<IEmailService, EmailService>();
+
+        services.AddTransient<IPdfTranslationService, PdfTranslationService>();
 
         services.AddTransient<IConnectionStringProtector, ConnectionStringProtector>();
 
@@ -69,8 +80,14 @@ public static class DependencyInjection
         services.AddScoped<IPermitCommandRepository, PermitCommandRepository>();
 
         services.AddScoped<IBuildingQueryRepository, BuildingQueryRepository>();
+        services.AddScoped<IBuildingCommandRepository, BuildingCommandRepository>();
 
         services.AddScoped<IVisitorQueryRepository, VisitorQueryRepository>();
+        services.AddScoped<IVisitorCommandRepository, VisitorCommandRepository>();
+
+        services.AddScoped<IEntryLogCommandRepository, EntryLogCommandRepository>();
+
+        services.AddScoped<IPermitUpdateRequestQueryRepository, PermitUpdateRequestQueryRepository>();
 
         // Shared
         services.AddScoped<ISharedTenantCommandRepository, SharedTenantCommandRepository>();

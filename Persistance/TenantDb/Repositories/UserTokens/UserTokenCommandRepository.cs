@@ -1,4 +1,7 @@
-﻿namespace Persistence.TenantDb.Repositories.UserTokens;
+﻿using Domain.TenantDomain.Tokens;
+using Domain.TenantDomain.Tokens.Repositories;
+
+namespace Persistence.TenantDb.Repositories.UserTokens;
 
 public class UserTokenCommandRepository(TenantDbContext dbContext) : IUserTokenCommandRepository
 {

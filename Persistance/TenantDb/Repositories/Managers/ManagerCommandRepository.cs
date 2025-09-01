@@ -1,4 +1,5 @@
-﻿using Domain.Users.Repositories.Managers;
+﻿using Domain.TenantDomain.Users;
+using Domain.TenantDomain.Users.Repositories.Managers;
 
 namespace Persistence.TenantDb.Repositories.Managers;
 

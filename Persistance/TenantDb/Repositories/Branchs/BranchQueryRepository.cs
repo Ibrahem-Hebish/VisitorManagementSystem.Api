@@ -1,4 +1,9 @@
 ﻿
+using Domain.TenantDomain.Branches;
+using Domain.TenantDomain.Branches.ObjectValues;
+using Domain.TenantDomain.Branches.Repositories;
+using Domain.TenantDomain.Tenants.ObjectValues;
+
 namespace Persistence.TenantDb.Repositories.Branchs;
 
 public class BranchQueryRepository(TenantDbContext dbContext) : IBranchQueryRepository
@@ -18,7 +23,7 @@ public class BranchQueryRepository(TenantDbContext dbContext) : IBranchQueryRepo
         return branch;
     }
 
-    public async Task<List<Branch>> GetByITenantIdAsync(TenantId id, CancellationToken cancellationToken = default)
+    public async Task<List<Branch>> GetByTenantIdAsync(TenantId id, CancellationToken cancellationToken = default)
     {
         return await dbContext.Branches.Where(b => b.TenantId == id)
             .Include(b => b.Employees)

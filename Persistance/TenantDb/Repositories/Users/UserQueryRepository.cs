@@ -1,4 +1,8 @@
-﻿using Domain.Users.Repositories.Users;
+﻿
+using Domain.TenantDomain.Roles;
+using Domain.TenantDomain.Users;
+using Domain.TenantDomain.Users.ObjectValues;
+using Domain.TenantDomain.Users.Repositories.Users;
 
 namespace Persistence.TenantDb.Repositories.Users;
 

@@ -1,5 +1,5 @@
 ﻿using Application.Services.Email;
-using Domain.Permits.DomainEvents;
+using Domain.TenantDomain.Permits.DomainEvents;
 
 namespace Application.Notification.Permits;
 
@@ -8,8 +8,13 @@ public sealed class PermitRejectedDomainEventHandler(
     )
     : INotificationHandler<PermitRejectedDomainEvent>
 {
-    public Task Handle(PermitRejectedDomainEvent notification, CancellationToken cancellationToken)
+    public async Task Handle(PermitRejectedDomainEvent notification, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        foreach (var email in notification.Emails)
+        {
+            var emailContent = new EmailContent(email, $"your permit with id {notification.PermitId} is rejected", "Permit status");
+
+            await emailService.SendEmail(emailContent);
+        }
     }
 }

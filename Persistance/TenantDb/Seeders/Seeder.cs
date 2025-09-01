@@ -1,4 +1,9 @@
-﻿namespace Persistence.TenantDb.Seeders;
+﻿using Domain.TenantDomain.Roles;
+using Domain.TenantDomain.Roles.Enums;
+using Domain.TenantDomain.Users;
+using Domain.TenantDomain.Users.Enums;
+
+namespace Persistence.TenantDb.Seeders;
 
 public class Seeder()
 {
@@ -15,11 +20,12 @@ public class Seeder()
         if (!dbContext.Roles.Any())
         {
             dbContext.Roles.AddRange(
-                               Role.Create("Admin"),
-                               Role.Create("BranchAdmin"),
-                               Role.Create("Manager"),
-                               Role.Create("Requester"),
-                               Role.Create("Security")
+                               Role.Create(Roles.Admin.ToString()),
+                               Role.Create(Roles.TenantAdmin.ToString()),
+                               Role.Create(Roles.BranchAdmin.ToString()),
+                               Role.Create(Roles.Manager.ToString()),
+                               Role.Create(Roles.Requester.ToString()),
+                               Role.Create(Roles.Security.ToString())
                                                          );
             await dbContext.SaveChangesAsync();
         }
@@ -44,7 +50,7 @@ public class Seeder()
 
             var hashedPassword = passwordHashingService.HashPasswordBCrypt("Hema123#");
 
-            User admin = new("Ibrahem", "Hebish", "ibrahemhebish@gmail.com", hashedPassword, "1234567890");
+            User admin = new("Ibrahem", "Hebish", "ibrahemhebish@gmail.com", hashedPassword, "1234567890", PersonGender.Male);
 
             admin.SetRole(adminRole);
 

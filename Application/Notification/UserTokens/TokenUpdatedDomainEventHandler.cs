@@ -1,4 +1,4 @@
-﻿using Domain.Tokens.DomainEvents;
+﻿using Domain.TenantDomain.Tokens.DomainEvents;
 
 namespace Application.Notification.UserTokens;
 

@@ -1,8 +1,4 @@
-﻿using Application.Services.PasswordHashing;
-using Persistence.TenantDb.Seeders;
-using Presentation.Middlewares;
-
-namespace Presentation;
+﻿namespace Presentation;
 
 public static class AppExtention
 {

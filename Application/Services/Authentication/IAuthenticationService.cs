@@ -1,5 +1,5 @@
 ﻿using Application.Dtos.UserToken;
-using Domain.Users;
+using Domain.TenantDomain.Users;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Application.Services.Authentication;

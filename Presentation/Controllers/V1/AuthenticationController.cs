@@ -1,7 +1,4 @@
-﻿using Application.Authentication.GetProfile;
-using Application.Authentication.Logout;
-
-namespace Presentation.Controllers.V1;
+﻿namespace Presentation.Controllers.V1;
 
 [ApiVersion(1.0)]
 public class AuthenticationController(ISender sender) : AppControllerBase
@@ -9,7 +6,7 @@ public class AuthenticationController(ISender sender) : AppControllerBase
 
     [HttpPost("signin")]
     [SkipTenantFilter]
-    //[EnableRateLimiting("SignInLimit")]
+    [EnableRateLimiting("SignInLimit")]
     public async Task<IActionResult> SignIn([FromBody] SignInCommand command)
     {
         var response = await sender.Send(command);
@@ -30,12 +27,39 @@ public class AuthenticationController(ISender sender) : AppControllerBase
 
     [HttpPost("refreshtoken")]
     [SkipTenantFilter]
-    //[EnableRateLimiting("SignInLimit")]
     public async Task<IActionResult> RefreshToken()
     {
         var response = await sender.Send(new RefreshTokenCommand());
 
         return NewResponse(response);
+    }
+
+    [HttpPost("forgot-password")]
+    [SkipTenantFilter]
+    public async Task<IActionResult> ForgotPassword(SendCodeToReseatPasswordCommand command)
+    {
+        var result = await sender.Send(command);
+
+        return NewResponse(result);
+    }
+
+    [HttpPost("reset-password")]
+    [SkipTenantFilter]
+    public async Task<IActionResult> ResetPassword(ResetPasswordCommand command)
+    {
+        var result = await sender.Send(command);
+
+        return NewResponse(result);
+    }
+
+    [HttpPost("change-password")]
+    [SkipTenantFilter]
+    [Authorize]
+    public async Task<IActionResult> ChangePassword(ChangePasswordCommand command)
+    {
+        var result = await sender.Send(command);
+
+        return NewResponse(result);
     }
 
     [HttpGet("Profile/{id}")]

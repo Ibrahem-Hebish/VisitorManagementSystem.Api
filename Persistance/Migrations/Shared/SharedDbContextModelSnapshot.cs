@@ -24,8 +24,8 @@ namespace Persistence.Migrations.Shared
 
             modelBuilder.Entity("Domain.SharedTenantMetadataEntities.Branches.SharedBranch", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -42,9 +42,8 @@ namespace Persistence.Migrations.Shared
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
-                    b.Property<string>("TenantId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("TenantId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -55,11 +54,11 @@ namespace Persistence.Migrations.Shared
 
             modelBuilder.Entity("Domain.SharedTenantMetadataEntities.SharedUsers.SharedUser", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("BranchId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid?>("BranchId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -85,12 +84,15 @@ namespace Persistence.Migrations.Shared
 
             modelBuilder.Entity("Domain.SharedTenantMetadataEntities.Tenants.SharedTenant", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ConnectionString")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("ManagerId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -99,13 +101,17 @@ namespace Persistence.Migrations.Shared
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ManagerId")
+                        .IsUnique()
+                        .HasFilter("[ManagerId] IS NOT NULL");
+
                     b.ToTable("SharedTenants", (string)null);
                 });
 
             modelBuilder.Entity("Domain.SharedTenantMetadataEntities.UserTokens.SharedUserToken", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("AccessToken")
                         .IsRequired()
@@ -115,8 +121,8 @@ namespace Persistence.Migrations.Shared
                     b.Property<DateTime>("AccessTokenExpiredDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("BranchId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid?>("BranchId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("InUse")
                         .HasColumnType("bit");
@@ -146,8 +152,8 @@ namespace Persistence.Migrations.Shared
 
                     b.OwnsOne("Domain.SharedTenantMetadataEntities.Branches.ObjectValues.SharedBranchAddress", "Address", b1 =>
                         {
-                            b1.Property<string>("SharedBranchId")
-                                .HasColumnType("nvarchar(450)");
+                            b1.Property<Guid>("SharedBranchId")
+                                .HasColumnType("uniqueidentifier");
 
                             b1.Property<string>("City")
                                 .IsRequired()
@@ -183,6 +189,16 @@ namespace Persistence.Migrations.Shared
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Branch");
+                });
+
+            modelBuilder.Entity("Domain.SharedTenantMetadataEntities.Tenants.SharedTenant", b =>
+                {
+                    b.HasOne("Domain.SharedTenantMetadataEntities.SharedUsers.SharedUser", "Manager")
+                        .WithOne()
+                        .HasForeignKey("Domain.SharedTenantMetadataEntities.Tenants.SharedTenant", "ManagerId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.Navigation("Manager");
                 });
 
             modelBuilder.Entity("Domain.SharedTenantMetadataEntities.UserTokens.SharedUserToken", b =>

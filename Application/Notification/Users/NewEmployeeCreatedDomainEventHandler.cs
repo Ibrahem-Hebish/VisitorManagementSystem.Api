@@ -1,7 +1,7 @@
-﻿using Domain.SharedTenantMetadataEntities.Branches.ObjectValues;
-using Domain.SharedTenantMetadataEntities.SharedUsers;
-using Domain.SharedTenantMetadataEntities.SharedUsers.ObjectValues;
-using Domain.Users.DomainEvents;
+﻿using Domain.CatalogDb.Branches.ObjectValues;
+using Domain.CatalogDb.SharedUsers;
+using Domain.CatalogDb.SharedUsers.ObjectValues;
+using Domain.TenantDomain.Users.DomainEvents;
 
 namespace Application.Notification.Users;
 
@@ -20,7 +20,7 @@ public class NewEmployeeCreatedDomainEventHandler(
 
         sharedUser.SetId(new SharedUserId(notification.Id));
 
-        sharedUser.SetBranch(new SharedBranchId(notification.BranchId.Guid));
+        sharedUser.SetBranch(new SharedBranchId(notification.BranchId.Value));
 
         await sharedUserCommandRepository.AddAsync(sharedUser, cancellationToken);
     }

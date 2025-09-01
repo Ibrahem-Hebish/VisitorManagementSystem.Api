@@ -1,5 +1,8 @@
 ﻿
-using Domain.Users.Repositories.Employees;
+using Domain.TenantDomain.Branches.ObjectValues;
+using Domain.TenantDomain.Users;
+using Domain.TenantDomain.Users.ObjectValues;
+using Domain.TenantDomain.Users.Repositories.Employees;
 
 namespace Persistence.TenantDb.Repositories.Employees;
 

@@ -1,8 +1,4 @@
-﻿using Application.CustomResponse;
-using Microsoft.AspNetCore.Mvc;
-using System.Net;
-
-namespace Presentation.Controllers;
+﻿namespace Presentation.Controllers;
 
 [Route("api/v{version:apiversion}/[controller]")]
 [ApiController]

@@ -4,10 +4,12 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
-    <IsPackable>false</IsPackable>
+	<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	<IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
   </PropertyGroup>
+
+	
 
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="8.5.0" />

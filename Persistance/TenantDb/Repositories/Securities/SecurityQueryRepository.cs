@@ -1,4 +1,7 @@
-﻿using Domain.Users.Repositories.Securities;
+﻿
+using Domain.TenantDomain.Users;
+using Domain.TenantDomain.Users.ObjectValues;
+using Domain.TenantDomain.Users.Repositories.Securities;
 
 namespace Persistence.TenantDb.Repositories.Securities;
 

@@ -81,6 +81,22 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.7.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[8.2.2, )"
             }
           },
           "imports": [
@@ -249,18 +265,6 @@
             "Microsoft.Extensions.Configuration.UserSecrets": {
               "target": "Package",
               "version": "[6.0.1, )"
-            },
-            "Serilog.AspNetCore": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Serilog.Sinks.Console": {
-              "target": "Package",
-              "version": "[6.0.0, )"
-            },
-            "Serilog.Sinks.MSSqlServer": {
-              "target": "Package",
-              "version": "[8.2.2, )"
             }
           },
           "imports": [

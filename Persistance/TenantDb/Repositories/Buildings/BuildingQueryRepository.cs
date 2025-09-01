@@ -1,4 +1,7 @@
-﻿using Domain.Buildings.Repositories;
+﻿using Domain.TenantDomain.Branches.ObjectValues;
+using Domain.TenantDomain.Buildings;
+using Domain.TenantDomain.Buildings.ObjectValues;
+using Domain.TenantDomain.Buildings.Repositories;
 
 namespace Persistence.TenantDb.Repositories.Buildings;
 
@@ -9,9 +12,9 @@ public class BuildingQueryRepository(TenantDbContext dbContext) : IBuildingQuery
         return await dbContext.Buildings.AnyAsync(b => b.Id == buildingId);
     }
 
-    public Task<List<Building>> GetAllAsync()
+    public async Task<List<Building>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        return await dbContext.Buildings.ToListAsync();
     }
 
     public Task<List<Building>> GetByBranchIdAsync(BranchId branchId)
@@ -19,9 +22,9 @@ public class BuildingQueryRepository(TenantDbContext dbContext) : IBuildingQuery
         throw new NotImplementedException();
     }
 
-    public Task<Building?> GetByIdAsync(BuildingId buildingId)
+    public async Task<Building?> GetByIdAsync(BuildingId buildingId)
     {
-        throw new NotImplementedException();
+        return await dbContext.Buildings.FindAsync(buildingId);
     }
 
     public async Task<int> GetFloorsCountAsync(BuildingId buildingId)

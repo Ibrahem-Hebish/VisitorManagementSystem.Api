@@ -1,4 +1,6 @@
-﻿using Domain.Users.Repositories.Requesters;
+﻿using Domain.TenantDomain.Users;
+using Domain.TenantDomain.Users.ObjectValues;
+using Domain.TenantDomain.Users.Repositories.Requesters;
 
 namespace Persistence.TenantDb.Repositories.Requesters;
 

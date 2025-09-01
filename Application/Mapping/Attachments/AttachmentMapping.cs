@@ -1,5 +1,5 @@
 ﻿using Application.Dtos.Attachments;
-using Domain.Attachments;
+using Domain.TenantDomain.Attachments;
 
 namespace Application.Mapping.Attachments;
 
@@ -17,7 +17,7 @@ public partial class AttachmentMapping
     public void MapAttachmentDto()
     {
         CreateMap<Attachment, AttachmentDto>()
-            .ForMember(dest => dest.AttachmentId, src => src.MapFrom(a => a.AttachmentId.Id.ToString()));
+            .ForMember(dest => dest.AttachmentId, src => src.MapFrom(a => a.AttachmentId.Value.ToString()));
     }
 }
 

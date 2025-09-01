@@ -22,7 +22,7 @@ public class ResponseHandler
             IsSuccess = true,
         };
     }
-    public static Response<T> NotFouned<T>(string message = null!)
+    public static Response<T> NotFound<T>(string message = null!)
     {
         return new Response<T>()
         {

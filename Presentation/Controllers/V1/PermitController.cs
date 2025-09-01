@@ -1,11 +1,11 @@
 ﻿namespace Presentation.Controllers.V1;
 
 [ApiVersion(1.0)]
-public class PermitController(ISender sender) : AppControllerBase
+public class PermitsController(ISender sender) : AppControllerBase
 {
 
     [HttpGet("{id}")]
-    [Authorize(Roles = "BranchAdmin,Manager,Requester,Security")]
+    [Authorize(Roles = "TenantAdmin,BranchAdmin,Manager,Requester,Security")]
     public async Task<IActionResult> GetById(string id)
     {
         var result = await sender.Send(new GetPermitByIdQuery(id));
@@ -13,8 +13,8 @@ public class PermitController(ISender sender) : AppControllerBase
         return NewResponse(result);
     }
 
-    [HttpGet("{id}/details")]
-    [Authorize(Roles = "BranchAdmin,Manager,Requester,Security")]
+    [HttpGet("details/{id}")]
+    [Authorize(Roles = "TenantAdmin,BranchAdmin,Manager,Requester,Security")]
     public async Task<IActionResult> GetDetails(string id)
     {
         var result = await sender.Send(new GetPermitDetails(id));
@@ -23,7 +23,7 @@ public class PermitController(ISender sender) : AppControllerBase
     }
 
     [HttpGet]
-    [Authorize(Roles = "BranchAdmin,Manager,Security")]
+    [Authorize(Roles = "TenantAdmin,BranchAdmin,Manager,Security")]
     public async Task<IActionResult> Get()
     {
         var result = await sender.Send(new GetAllPermitsQuery());
@@ -32,7 +32,7 @@ public class PermitController(ISender sender) : AppControllerBase
     }
 
     [HttpGet("paginate")]
-    [Authorize(Roles = "BranchAdmin,Manager,Security")]
+    [Authorize(Roles = "TenantAdmin,BranchAdmin,Manager,Security")]
     public async Task<IActionResult> Paginate(PaginatePermits query)
     {
         var result = await sender.Send(query);
@@ -41,7 +41,7 @@ public class PermitController(ISender sender) : AppControllerBase
     }
 
     [HttpGet("requester/{requesterId}")]
-    [Authorize(Roles = "Requester")]
+    [Authorize(Roles = "TenantAdmin,Requester,Manager,BranchAdmin")]
     public async Task<IActionResult> GetByRequesterId(string requesterId)
     {
         var result = await sender.Send(new GetPermitsCreatedByRequesterQuery(requesterId));
@@ -50,7 +50,7 @@ public class PermitController(ISender sender) : AppControllerBase
     }
 
     [HttpGet("manager/{managerId}")]
-    [Authorize(Roles = "Manager")]
+    [Authorize(Roles = "TenantAdmin,Manager,BranchAdmin")]
     public async Task<IActionResult> GetByManagerId(string managerId)
     {
         var result = await sender.Send(new GetPermitsHandledByManagerQuery(managerId));
@@ -58,17 +58,8 @@ public class PermitController(ISender sender) : AppControllerBase
         return NewResponse(result);
     }
 
-    [HttpGet("visitor/{visitorId}")]
-    [Authorize(Roles = "BranchAdmin,Manager,Requester,Security")]
-    public async Task<IActionResult> GetByVisitorId(string visitorId)
-    {
-        var result = await sender.Send(new GetVistorPermitsQuery(visitorId));
-
-        return NewResponse(result);
-    }
-
     [HttpGet("latest")]
-    [Authorize(Roles = "BranchAdmin,Manager,Security")]
+    [Authorize(Roles = "TenantAdmin,BranchAdmin,Manager,Security")]
     public async Task<IActionResult> GetLatest(int count)
     {
         var result = await sender.Send(new GetLatestPermitsQuery(count));
@@ -77,7 +68,7 @@ public class PermitController(ISender sender) : AppControllerBase
     }
 
     [HttpGet("searchbydate")]
-    [Authorize(Roles = "BranchAdmin,Manager,Security")]
+    [Authorize(Roles = "TenantAdmin,BranchAdmin,Manager,Security")]
     public async Task<IActionResult> SearchPermitByDate(DateTime startDate, DateTime endDate)
     {
         var result = await sender.Send(new SearchPermitByDateQuery(startDate, endDate));
@@ -85,8 +76,8 @@ public class PermitController(ISender sender) : AppControllerBase
         return NewResponse(result);
     }
 
-    [HttpGet("{id}/entrylog")]
-    [Authorize(Roles = "BranchAdmin,Manager,Requester,Security")]
+    [HttpGet("entrylog/{id}")]
+    [Authorize(Roles = "TenantAdmin,BranchAdmin,Manager,Requester,Security")]
     public async Task<IActionResult> GetPermitEntryLog(string id)
     {
         var result = await sender.Send(new GetPermitEntryLogQuery(id));
@@ -94,8 +85,8 @@ public class PermitController(ISender sender) : AppControllerBase
         return NewResponse(result);
     }
 
-    [HttpGet("{id}/history")]
-    [Authorize(Roles = "BranchAdmin,Manager,Requester,Security")]
+    [HttpGet("history/{id}")]
+    [Authorize(Roles = "TenantAdmin,BranchAdmin,Manager,Requester,Security")]
     public async Task<IActionResult> GetPermitHistory(string id)
     {
         var result = await sender.Send(new GetPermitHistoryQuery(id));
@@ -112,7 +103,7 @@ public class PermitController(ISender sender) : AppControllerBase
         return NewResponse(result);
     }
 
-    [HttpPatch("{id}/approve")]
+    [HttpPatch("approve/{id}")]
     [Authorize(Roles = "Manager")]
     public async Task<IActionResult> Approve(string id)
     {
@@ -121,7 +112,7 @@ public class PermitController(ISender sender) : AppControllerBase
         return NewResponse(result);
     }
 
-    [HttpPatch("{id}/reject")]
+    [HttpPatch("reject/{id}")]
     [Authorize(Roles = "Manager")]
     public async Task<IActionResult> Reject(string id)
     {

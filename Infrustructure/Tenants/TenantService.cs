@@ -1,6 +1,6 @@
-﻿using Domain.SharedTenantMetadataEntities.UserTokens;
-using Domain.SharedTenantMetadataEntities.UserTokens.ObjectValues;
-using Domain.SharedTenantMetadataEntities.UserTokens.Repositories;
+﻿using Domain.TenantDomain.Roles;
+using Domain.TenantDomain.Roles.Enums;
+using Domain.TenantDomain.Tenants;
 
 namespace Infrustructure.Tenants;
 
@@ -46,8 +46,6 @@ public class TenantService : ITenantService
 
     public async Task<(string, string)> CreateDatabaseForTenant(Tenant tenant, IServiceProvider serviceProvider)
     {
-
-
         var dbContext = serviceProvider.GetRequiredService<TenantDbContext>();
 
         dbContext.Database.SetConnectionString(_connectionString);
@@ -59,16 +57,17 @@ public class TenantService : ITenantService
             dbContext.Tenants.Add(tenant);
 
             dbContext.Roles.AddRange(
-                               Role.Create("Admin"),
-                               Role.Create("BranchAdmin"),
-                               Role.Create("Manager"),
-                               Role.Create("Requester"),
-                               Role.Create("Security")
+                               Role.Create(Roles.Admin.ToString()),
+                               Role.Create(Roles.TenantAdmin.ToString()),
+                               Role.Create(Roles.BranchAdmin.ToString()),
+                               Role.Create(Roles.Manager.ToString()),
+                               Role.Create(Roles.Requester.ToString()),
+                               Role.Create(Roles.Security.ToString())
                                                          );
 
             await dbContext.SaveChangesAsync();
 
-            return (tenant.Id.Guid.ToString(), tenant.Name);
+            return (tenant.Id.Value.ToString(), tenant.Name);
         }
         catch (Exception ex)
         {
@@ -76,9 +75,6 @@ public class TenantService : ITenantService
 
             return (null!, null!);
         }
-
-
-
     }
 
     public async Task DeleteDatabaseForTenant(IPublisher publisher)
@@ -113,7 +109,12 @@ public class TenantService : ITenantService
         var defaultConnectionString = configuration.GetSection("TenantConnection").Value;
 
         if (defaultConnectionString is null)
+        {
+            Log.Error("Tennant connection string is missing.");
+
             throw new Exception("Error While processing your request");
+
+        }
 
         if (sharedUser.BranchId is not null)
         {
@@ -125,11 +126,11 @@ public class TenantService : ITenantService
 
                 _connectionString = connecionStringProtector.Decrypt(tenant!.ConnectionString);
 
-                _tenantId = tenant.Id.Id.ToString();
+                _tenantId = tenant.Id.Value.ToString();
 
                 _tenantName = tenant.Name;
 
-                _branchId = branch.Id.Guid.ToString();
+                _branchId = branch.Id.Value.ToString();
             }
         }
         else
@@ -137,6 +138,10 @@ public class TenantService : ITenantService
 
     }
 
+    public async Task SetConnectionStringForResetPassword(string email, IServiceProvider serviceProvider)
+    {
+        await SetConnectionStringForSignIn(email, serviceProvider);
+    }
     public async Task<SharedUserToken> SetConnectionStringRefreshToken(string userTokenId, IServiceProvider serviceProvider)
     {
         var sharedUserTokenQueryRepository = serviceProvider.GetRequiredService<ISharedUserTokenQueryRepository>();
@@ -164,7 +169,7 @@ public class TenantService : ITenantService
             {
                 this._tenantName = (branch.Name);
 
-                this._branchId = (branch.Id.Guid.ToString());
+                this._branchId = (branch.Id.Value.ToString());
 
                 var tenant = await sharedTenantQueryRepository.GetByIdAsync(branch.TenantId);
 
@@ -187,6 +192,48 @@ public class TenantService : ITenantService
         }
 
         return sharedToken;
+
+    }
+
+    public async Task SetConnectionStringForChangePassword(IServiceProvider serviceProvider, IHttpContextAccessor httpContextAccessor)
+    {
+        var configuration = serviceProvider.GetRequiredService<IConfiguration>();
+
+        var role = httpContextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.Role);
+
+        if (role is null)
+            throw new UnauthorizedAccessException("User role not found in claims.");
+
+        if (role == Roles.Admin.ToString())
+        {
+            var connectionString = configuration["SharedTenant"];
+
+            ArgumentNullException.ThrowIfNull(connectionString);
+
+            _connectionString = connectionString;
+        }
+        else
+        {
+            var sharedTenantQueryRepository = serviceProvider.GetRequiredService<ISharedTenantQueryRepository>();
+
+            var connectionStringProtector = serviceProvider.GetRequiredService<IConnectionStringProtector>();
+
+            var tenantId = httpContextAccessor.HttpContext?.User.FindFirstValue("TenantId");
+
+            if (tenantId is null)
+                throw new UnauthorizedAccessException("User tenant id is not found in claims.");
+
+            var tenant = await sharedTenantQueryRepository.GetByIdAsync(new SharedTenantId(new Guid(tenantId)));
+
+            if (tenant is null)
+                throw new UnauthorizedAccessException("User tenant is not found.");
+
+            var connectionString = tenant.ConnectionString;
+
+            connectionString = connectionStringProtector.Decrypt(connectionString);
+
+            _connectionString = connectionString;
+        }
 
     }
 

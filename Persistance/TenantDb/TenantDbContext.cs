@@ -1,6 +1,16 @@
-﻿using Domain.VisitorPermits;
+﻿using Domain.TenantDomain.Attachments;
+using Domain.TenantDomain.Belongings;
+using Domain.TenantDomain.Buildings;
+using Domain.TenantDomain.Common;
+using Domain.TenantDomain.EntryLogs;
+using Domain.TenantDomain.PermitUpdateRequests;
+using Domain.TenantDomain.Roles;
+using Domain.TenantDomain.Tenants;
+using Domain.TenantDomain.Tokens;
+using Domain.TenantDomain.Visitors;
 using MediatR;
-using UserConfiguration = Persistence.TenantDb.TenantDbConfiguration.UserConfiguration;
+using Persistence.TenantDb.Configurations;
+using UserConfiguration = Persistence.TenantDb.Configurations.UserConfiguration;
 
 namespace Persistence.TenantDb;
 
@@ -80,31 +90,31 @@ public class TenantDbContext : DbContext
         _branchId = _tenantService.GetBranchId();
 
         modelBuilder.Entity<Permit>()
-            .HasQueryFilter(p => p.BranchId.Guid.ToString() == _branchId);
+            .HasQueryFilter(p => p.BranchId.Value.ToString() == _branchId);
 
         modelBuilder.Entity<PermitTrack>()
-            .HasQueryFilter(pt => pt.BranchId.Guid.ToString() == _branchId);
+            .HasQueryFilter(pt => pt.BranchId.Value.ToString() == _branchId);
 
         modelBuilder.Entity<PermitUpdateRequest>()
-            .HasQueryFilter(pur => pur.BranchId.Guid.ToString() == _branchId);
+            .HasQueryFilter(pur => pur.BranchId.Value.ToString() == _branchId);
 
         modelBuilder.Entity<Entrylog>()
-            .HasQueryFilter(el => el.BranchId.Guid.ToString() == _branchId);
+            .HasQueryFilter(el => el.BranchId.Value.ToString() == _branchId);
 
         modelBuilder.Entity<Attachment>()
-            .HasQueryFilter(a => a.BranchId.Guid.ToString() == _branchId);
+            .HasQueryFilter(a => a.BranchId.Value.ToString() == _branchId);
 
         modelBuilder.Entity<Belonging>()
-            .HasQueryFilter(b => b.BranchId.Guid.ToString() == _branchId);
+            .HasQueryFilter(b => b.BranchId.Value.ToString() == _branchId);
 
         modelBuilder.Entity<Building>()
-            .HasQueryFilter(b => b.BranchId.Guid.ToString() == _branchId);
+            .HasQueryFilter(b => b.BranchId.Value.ToString() == _branchId);
 
         modelBuilder.Entity<Visitor>()
-            .HasQueryFilter(v => v.BranchId.Guid.ToString() == _branchId);
+            .HasQueryFilter(v => v.BranchId.Value.ToString() == _branchId);
 
         modelBuilder.Entity<VisitorPermit>()
-            .HasQueryFilter(v => v.BranchId.Guid.ToString() == _branchId);
+            .HasQueryFilter(v => v.BranchId.Value.ToString() == _branchId);
 
     }
 

@@ -1,4 +1,8 @@
-﻿namespace Persistence.TenantDb.Repositories.Tenants;
+﻿using Domain.TenantDomain.Tenants;
+using Domain.TenantDomain.Tenants.ObjectValues;
+using Domain.TenantDomain.Tenants.Repositories;
+
+namespace Persistence.TenantDb.Repositories.Tenants;
 
 public class TenantQueryRepository(TenantDbContext tenantDbContext) : ITenantQueryRepository
 {

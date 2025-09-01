@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TR6KJI6VkHk=",
+  "dgSpecHash": "9Zn826GT6Mg=",
   "success": true,
   "projectFilePath": "C:\\Users\\Super magic\\OneDrive\\Desktop\\VisitorManagementSystem\\Infrustructure\\Infrustructure.csproj",
   "expectedPackageFiles": [
@@ -56,6 +56,7 @@
     "C:\\Users\\Super magic\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.0.1\\microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
     "C:\\Users\\Super magic\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Super magic\\.nuget\\packages\\mimekit\\4.13.0\\mimekit.4.13.0.nupkg.sha512",
+    "C:\\Users\\Super magic\\.nuget\\packages\\questpdf\\2025.7.1\\questpdf.2025.7.1.nupkg.sha512",
     "C:\\Users\\Super magic\\.nuget\\packages\\serilog\\4.2.0\\serilog.4.2.0.nupkg.sha512",
     "C:\\Users\\Super magic\\.nuget\\packages\\serilog.aspnetcore\\9.0.0\\serilog.aspnetcore.9.0.0.nupkg.sha512",
     "C:\\Users\\Super magic\\.nuget\\packages\\serilog.extensions.hosting\\9.0.0\\serilog.extensions.hosting.9.0.0.nupkg.sha512",

@@ -4,12 +4,6 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrustructure(this IServiceCollection services, IConfiguration configuration)
     {
 
-        services.AddSerilog();
-
-        Log.Logger = new LoggerConfiguration()
-                         .ReadFrom.Configuration(configuration)
-                         .CreateLogger();
-
         services.Configure<EmailSettings>(configuration.GetSection("Email"));
 
         services.AddHttpContextAccessor();

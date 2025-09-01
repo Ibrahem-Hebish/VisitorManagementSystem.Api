@@ -1,12 +1,13 @@
-﻿using Domain.SharedTenantMetadataEntities.SharedUsers.ObjectValues;
-using Domain.Users.DomainEvents;
+﻿using Domain.CatalogDb.SharedUsers.ObjectValues;
+using Domain.TenantDomain.Users.DomainEvents;
+using Serilog;
 
 namespace Application.Notification.Users;
 
 public sealed class EmployeeDeletedDomainEventHandler(
     ISharedUserQueryRepository sharedUserQueryRepository,
     ISharedUserCommandRepository sharedUserCommandRepository)
-    
+
     : INotificationHandler<EmployeeDeletedDomainEvent>
 {
     public async Task Handle(EmployeeDeletedDomainEvent notification, CancellationToken cancellationToken)
@@ -18,9 +19,9 @@ public sealed class EmployeeDeletedDomainEventHandler(
             if (user is not null)
                 await sharedUserCommandRepository.DeleteAsync(user, cancellationToken);
         }
-        catch (Exception ex) 
+        catch (Exception ex)
         {
-            // logging will be here        
+            Log.Error($"failed to add employee to shared db. message: {ex.Message}");
         }
     }
 }

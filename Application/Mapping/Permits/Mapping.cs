@@ -1,5 +1,5 @@
 ﻿using Application.Dtos.Permits;
-using Domain.Permits;
+using Domain.TenantDomain.Permits;
 
 namespace Application.Mapping.Permits;
 
@@ -17,8 +17,9 @@ public partial class PermitMapping
     public void MapPermitDto()
     {
         CreateMap<Permit, PermitDto>()
-            .ForMember(dest => dest.PermitId, src => src.MapFrom(p => p.PermitId.Id.ToString()))
-            .ForMember(dest => dest.BuldingName, src => src.MapFrom(p => p.Building.ToString()));
+            .ForMember(dest => dest.PermitId, src => src.MapFrom(p => p.PermitId.Value.ToString()))
+            .ForMember(dest => dest.BuldingName, src => src.MapFrom(p => p.Building.ToString()))
+            .ForMember(dest => dest.Visitors, src => src.MapFrom(p => p.Visitors));
 
     }
 }
@@ -28,7 +29,7 @@ public partial class PermitMapping
     public void MapPermitDetails()
     {
         CreateMap<Permit, PermitDetailsDto>()
-            .ForMember(dest => dest.PermitId, src => src.MapFrom(p => p.PermitId.Id.ToString()))
+            .ForMember(dest => dest.PermitId, src => src.MapFrom(p => p.PermitId.Value.ToString()))
             .ForMember(dest => dest.BuldingName, src => src.MapFrom(p => p.Building.ToString()));
     }
 }

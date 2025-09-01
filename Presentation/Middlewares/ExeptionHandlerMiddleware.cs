@@ -1,6 +1,4 @@
-﻿using System.Text.Json;
-
-namespace Presentation.Middlewares;
+﻿namespace Presentation.Middlewares;
 
 public class ExeptionHandlerMiddleware : IMiddleware
 {

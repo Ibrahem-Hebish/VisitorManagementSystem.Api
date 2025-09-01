@@ -1,6 +1,5 @@
-﻿using Azure.Core;
-using Domain.Users;
-using Domain.Users.Repositories.Requesters;
+﻿using Domain.TenantDomain.Users;
+using Domain.TenantDomain.Users.Repositories.Requesters;
 
 namespace Persistence.TenantDb.Repositories.Requesters;
 
@@ -13,6 +12,6 @@ public class RequesterCommandRepository(TenantDbContext dbContext) : IRequesterC
 
 
 
-    public void UpdateAsync(Requester requester) =>  dbContext.Requesters.Update(requester);
-    
+    public void UpdateAsync(Requester requester) => dbContext.Requesters.Update(requester);
+
 }
